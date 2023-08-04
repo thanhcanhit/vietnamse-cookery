@@ -1,11 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import "../components/ControlBar/controlBarSlice";
-import controlBarSlice from "../components/ControlBar/controlBarSlice";
+import dataSlice from "../assets/data/dataSlice";
 
 const store = configureStore({
 	reducer: {
-		controlBar: controlBarSlice,
+		data: dataSlice
 	},
 });
+
+export type RootState = ReturnType<typeof store.getState>
 
 export default store;

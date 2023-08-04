@@ -9,7 +9,9 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  font-size: 1rem;
+  font-size: .8rem;
+  font-weight: 600;
+  background-color: white;
 }
 
 .controlItem {
@@ -30,7 +32,7 @@
 
 .controlItem.active,
 .controlItem.active .itemIcon {
-  color: red
+  color: var(--primary-color);
 }
 
 .controlItem.active .itemIcon {

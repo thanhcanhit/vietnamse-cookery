@@ -1,25 +1,25 @@
 import { NavLink } from "react-router-dom";
 import { IconType } from "react-icons/lib/esm/iconBase";
-import {PiCookingPotBold} from "react-icons/pi";
-import {MdOutlineFavoriteBorder} from "react-icons/md";
+import { PiCookingPotBold } from "react-icons/pi";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
 import styles from "./controlBar.module.css";
 
 type ControlItem = {
 	path: string;
 	display: string;
-	icon: IconType
+	icon: IconType;
 };
 
 const controlList: ControlItem[] = [
 	{
 		path: "/",
 		display: "Discovery",
-		icon: PiCookingPotBold 
+		icon: PiCookingPotBold,
 	},
 	{
 		path: "/favorite",
 		display: "Favorite",
-		icon: MdOutlineFavoriteBorder
+		icon: MdOutlineFavoriteBorder,
 	},
 ];
 
@@ -36,7 +36,7 @@ const ControlBar = () => {
 						return isActive ? draft + " " + styles.active : draft;
 					}}
 				>
-					{<item.icon className={styles.itemIcon}/>}
+					{<item.icon className={styles.itemIcon} />}
 					{<span className={styles.itemName}>{item.display}</span>}
 				</NavLink>
 			))}

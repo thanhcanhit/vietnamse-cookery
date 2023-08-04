@@ -1,21 +1,24 @@
-interface Object {
-	id: string;
+interface Base {
+	id: number;
 	name: string;
 }
 
-interface Food extends Object {
-	description: string;
-	imgPath: [string];
-	ingredient: [string];
-	steps: [string];
-	processMaterials: string;
+interface Step {
+	name: string;
+	content: string | string[]
 }
 
-interface TouristAttraction extends Object {
-	imgPath: [string];
+interface Food extends Base {
+	description: string;
+	imgPath: string[];
+	ingredient: string[];
+	steps: Step[];
+	touristAttractions: number[];
+}
+
+interface TouristAttraction extends Base {
+	imgPath: string[];
 	description: string;
 }
 
-interface Location extends Object {
-	touristAttractions: [TouristAttraction];
-}
+export type { Food, TouristAttraction };
