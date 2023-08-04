@@ -1,8 +1,8 @@
 .searchBar {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 8px;
+  right: 8px;
   animation: searchBarSlideDown .7s ease;
 }
 

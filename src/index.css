@@ -17,6 +17,10 @@ html {
   font-weight: 700;
 }
 
+.color-primary {
+  color: #f6427e;
+}
+
 .pc-notice {
   display: none;
 }

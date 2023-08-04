@@ -1,35 +1,24 @@
 import { Food } from "../../assets/data/interface";
-import { Link } from "react-router-dom";
+import FoodItem from "./FoodItem";
 import styles from "./home.module.css";
+import { WiStars } from "react-icons/wi";
+
 type TrendingType = {
 	foods: Food[];
 };
 
 const Trending = ({ foods }: TrendingType) => {
+	const foodListRendered = foods.map((food) => <FoodItem food={food} key={food.id} />);
+
 	return (
-		<>
+		<div>
 			<div className="container mb-2">
-				<h2 className="heading">Trending</h2>
+				<h2 className="heading">
+					Trending <WiStars className="color-primary fs-2 " />
+				</h2>
 			</div>
-			<div className={styles.horizontalScroll}>
-				{foods.map((food) => (
-					<div key={food.id} className={styles.trendingItemWrapper}>
-						<Link
-							to={`/food/${food.id}`}
-							className="text-decoration-none "
-						>
-							<div className={styles.trendingItemContent}>
-								<img
-									style={{ objectFit: "cover", height: 120 }}
-									src={food.imgPath[0]}
-								/>
-								<span>{food.name}</span>
-							</div>
-						</Link>
-					</div>
-				))}
-			</div>
-		</>
+			<div className={styles.horizontalScroll}>{foodListRendered}</div>
+		</div>
 	);
 };
 
