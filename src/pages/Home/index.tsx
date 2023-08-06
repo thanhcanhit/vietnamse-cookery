@@ -40,8 +40,8 @@ const Home = () => {
 							<MdFastfood className="color-primary mb-1" />
 						</div>
 						<div className="row justify-content-center">
-							<div className="col-6 p-0">{foodListRendered1}</div>
-							<div className="col-6 p-0">{foodListRendered2}</div>
+							<div className="col-6 p-0 pe-2">{foodListRendered1}</div>
+							<div className="col-6 p-0 ps-2">{foodListRendered2}</div>
 						</div>
 					</div>
 				</div>

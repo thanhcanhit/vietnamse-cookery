@@ -4,6 +4,7 @@
 
 .home {
   color: #2c2c2c;
+  background-color: rgba(245, 245, 245, 0.476);
 }
 
 .container {
@@ -11,7 +12,7 @@
 }
 
 .content {
-  margin-top: 54px;
+  margin-top: 64px;
   animation: fadeIn .7s ease;
 }
 
@@ -49,14 +50,15 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  gap: 1rem;
   overflow-x: auto;
-  padding-inline: 1rem;
+  margin-inline: 1rem;
   padding-bottom: 1rem;
   scroll-snap-type: x mandatory;
 }
 
 .trendingItemWrapper {
-  padding: 0 .5rem;
+  padding: 0;
   scroll-snap-align: start;
   min-width: 160px;
   max-width: 100%;

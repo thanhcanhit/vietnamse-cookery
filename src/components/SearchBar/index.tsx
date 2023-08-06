@@ -9,16 +9,19 @@ const SearchBar = () => {
 	};
 
 	return (
-		<form onSubmit={handleFormSubmit}>
-			<div className={`${styles.searchBar} mb-3 p-2`}>
-        <BiSearchAlt2 className={styles.searchIcon} onClick={handleFormSubmit}/>
+		<div className={`${styles.searchBar} px-2 py-3`}>
+			<form onSubmit={handleFormSubmit}>
+				<BiSearchAlt2
+					className={styles.searchIcon}
+					onClick={handleFormSubmit}
+				/>
 				<input
 					type="text"
 					className={`${styles.searchInput} form-control rounded-5`}
 					placeholder="Search for recipes"
 				/>
-			</div>
-		</form>
+			</form>
+		</div>
 	);
 };
 

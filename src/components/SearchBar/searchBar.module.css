@@ -1,9 +1,12 @@
 .searchBar {
   position: fixed;
   top: 0;
-  left: 8px;
-  right: 8px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding-bottom: 1rem;
   animation: searchBarSlideDown .7s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .searchInput {
@@ -15,7 +18,7 @@
 
 .searchIcon {
   position: absolute;
-  top: 16px;
+  top: 22px;
   left: 20px;
   font-size: 24px;
   color: var(--text-color);

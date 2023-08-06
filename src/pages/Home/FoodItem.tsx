@@ -1,4 +1,4 @@
-import { Food } from "../../assets/data/interface";
+import { Food } from "../../types/interface";
 import { Link } from "react-router-dom";
 import styles from "./home.module.css";
 

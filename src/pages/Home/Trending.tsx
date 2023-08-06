@@ -1,4 +1,4 @@
-import { Food } from "../../assets/data/interface";
+import { Food } from "../../types/interface";
 import FoodItem from "./FoodItem";
 import styles from "./home.module.css";
 import { WiStars } from "react-icons/wi";

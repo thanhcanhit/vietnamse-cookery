@@ -1,15 +1,15 @@
-import { Food } from "../../assets/data/interface";
+import { Food } from "../../types/interface";
 import { useState } from "react";
 import styles from "./home.module.css";
 import { PhotoSlider } from "react-photo-view";
 import { Link } from "react-router-dom";
-
 
 type LovingType = {
 	food: Food;
 };
 
 const LovingFood = ({ food }: LovingType) => {
+	const [index, setIndex] = useState(0);
 	const [visible, setVisible] = useState(false);
 
 	return (
@@ -39,7 +39,12 @@ const LovingFood = ({ food }: LovingType) => {
 					key: item,
 				}))}
 				visible={visible}
-				onClose={() => setVisible(false)}
+				index={index}
+				onIndexChange={setIndex}
+				onClose={() => {
+					setVisible(false);
+					setIndex(0);
+				}}
 				maskOpacity={0.8}
 			/>{" "}
 		</div>
