@@ -1,8 +1,11 @@
 import React from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import styles from "./searchBar.module.css";
+import { useSelector } from "react-redux";
+import { languageSelector } from "../../app/selectors";
 
 const SearchBar = () => {
+	const language = useSelector(languageSelector);
 	const handleFormSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
 		console.log("Submit");
@@ -18,7 +21,7 @@ const SearchBar = () => {
 				<input
 					type="text"
 					className={`${styles.searchInput} form-control rounded-5`}
-					placeholder="Search for recipes"
+					placeholder={language == "en" ? "Search for recipes" : "Tìm kiếm công thức"}
 				/>
 			</form>
 		</div>

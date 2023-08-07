@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import SearchBar from "./../../components/SearchBar/index";
 import styles from "./home.module.css";
-import { foodsSelector } from "../../app/selectors";
+import { foodsSelector, languageSelector } from "../../app/selectors";
 import LovingFood from "./LovingFood";
 import Trending from "./Trending";
 import { MdFastfood } from "react-icons/md";
@@ -9,6 +9,7 @@ import FoodItem from "./FoodItem";
 
 const Home = () => {
 	const foods = useSelector(foodsSelector);
+	const language: "en" | "vi" = useSelector(languageSelector);
 
 	const randomNumber = Math.round(Math.random() * (foods.length - 1) + 1);
 	const randomFood =
@@ -35,13 +36,19 @@ const Home = () => {
 					<div className={styles.container}>
 						<div className="d-flex align-items-center justify-content-center  gap-2 ">
 							<h2 className="heading">
-								And other delicious dishes{" "}
+								{language === "en"
+									? "And other delicious dishes"
+									: "Và những món ngon khác"}
 							</h2>{" "}
 							<MdFastfood className="color-primary mb-1" />
 						</div>
 						<div className="row justify-content-center">
-							<div className="col-6 p-0 pe-2">{foodListRendered1}</div>
-							<div className="col-6 p-0 ps-2">{foodListRendered2}</div>
+							<div className="col-6 p-0 pe-2">
+								{foodListRendered1}
+							</div>
+							<div className="col-6 p-0 ps-2">
+								{foodListRendered2}
+							</div>
 						</div>
 					</div>
 				</div>
