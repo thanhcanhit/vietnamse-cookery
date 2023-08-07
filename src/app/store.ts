@@ -1,9 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import dataSlice from "../assets/data/dataSlice";
+import langSlice from "./langSlice";
+
 
 const store = configureStore({
 	reducer: {
-		data: dataSlice
+		data: dataSlice,
+		language: langSlice
 	},
 });
 

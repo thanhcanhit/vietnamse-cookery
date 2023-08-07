@@ -11,7 +11,11 @@ const foods: Food[] = [
 			Although the ingredients to cook beef noodle soup are quite a lot, the processing method is not fussy or complicated. You just need to carefully choose the fresh ingredients and add the necessary spices to be able to start making this dish right away.
 			`,
 		},
-		imgPath: ["img/food/1/1.jpg", "img/food/1/2.jpg", "img/food/1/3.jpg"],
+		imgPath: [
+			"img/foods/1/1.png",
+			"img/foods/1/2.jpg",
+			"img/foods/1/3.jpg",
+		],
 		ingredient: {
 			vi: [
 				"Bắp bò: 600 gr",
@@ -108,7 +112,11 @@ const foods: Food[] = [
 			vi: `Bún chả là một món ăn của Việt Nam, bao gồm bún, chả thịt lợn nướng trên than hoa và bát nước mắm chua cay mặn ngọt. Món ăn xuất xứ từ miền Bắc Việt Nam, là thứ quà có sức sống lâu bền nhất của Hà Nội, nên có thể coi đây là một trong những đặc sản đặc trưng của ẩm thực Hà thành. Bún chả có nét tương tự món bún thịt nướng ở miền Trung và miền Nam, nhưng nước mắm pha có vị thanh nhẹ hơn.`,
 			en: `Bun cha is a Vietnamese dish consisting of vermicelli, grilled pork rolls over charcoal, and a bowl of sweet and sour fish sauce. The dish originates from the North of Vietnam and is the most durable gift of Hanoi, so it can be considered one of the typical specialties of Hanoi cuisine. Bun cha is similar to grilled meat vermicelli in the Central and Southern regions, but the mixed fish sauce has a lighter taste.`,
 		},
-		imgPath: ["img/food/1/1.jpg", "img/food/1/2.jpg", "img/food/1/3.jpg"],
+		imgPath: [
+			"img/foods/2/1.png",
+			"img/foods/2/2.png",
+			"img/foods/2/3.jpg",
+		],
 		ingredient: {
 			vi: [
 				"1 kg Bún tươi",
@@ -207,12 +215,16 @@ const foods: Food[] = [
 	},
 	{
 		id: 3,
-		name: { vi: "Gỏi cuốn", en: "Spring rolls" },
+		name: { vi: "Gỏi cuốn tôm thịt", en: "Spring rolls" },
 		introduction: {
 			vi: `Gỏi cuốn tôm thịt là món ngon hấp dẫn, có độ dinh dưỡng cao và thích hợp cho những ngày mà bạn cảm thấy ngán cơm, thì đây là sự lựa chọn hoàn hảo. Cùng vào bếp thực hiện ngay món gỏi cuốn thơm ngon này nha.`,
 			en: `Shrimp and meat rolls are delicious, highly nutritious, and suitable for days when you feel bored with rice. This is the perfect choice. Let's go to the kitchen to make this delicious salad roll right away.`,
 		},
-		imgPath: ["img/food/1/1.jpg", "img/food/1/2.jpg", "img/food/1/3.jpg"],
+		imgPath: [
+			"img/foods/3/1.jpg",
+			"img/foods/3/2.jpg",
+			"img/foods/3/3.jpg",
+		],
 		ingredient: {
 			vi: [
 				"Thịt heo: 300 gr",
@@ -337,6 +349,133 @@ const foods: Food[] = [
 		touristAttractions: [6, 7, 8, 9, 10],
 	},
 	{
+		id: 4,
+		name: { vi: "Bánh xèo miền Tây", en: "Crispy Vietnamese Pancake" },
+		introduction: {
+			vi: `Bánh xèo là món ăn dân dã có mặt ở khắp mọi miền đất nước. Gốc tích của bánh xèo xuất hiện đầu tiên ở miền Trung vùng đất đầy nắng và gió, sau đó được lan truyền ra nhiều nơi khác trên cả nước. Ở mỗi miền bánh xèo lại được biến tấu theo nhiều cách khác nhau nhưng luôn mang hương vị đậm đà, khó cưỡng lại được.
+			Bánh xèo có mặt ở miền Tây đã từ rất lâu đời, đến nay đã trở thành một món ăn không thể thiếu trong những buổi hội hè, vui chơi của người dân nơi đây. Bánh xèo miền Tây mang trong mình những nét rất riêng, cái "hồn cốt" của ẩm thực miền Tây Nam Bộ mà không thể lẫn vào đâu được.`,
+			en: `Banh xeo is a popular dish found in all parts of the country. The origin of banh xeo appeared first in the central region of the sunny and windy land and then spread to many other places across the country. In each region, banh xeo is modified in different ways but always has a strong and irresistible flavor.
+			Banh xeo has been present in the West for a long time, and so far it has become an indispensable dish in the festivals and entertainment of the people here. Western pancakes have their own unique features, the "soul" of the cuisine of the Southwest region, that cannot be confused.
+			`,
+		},
+		imgPath: ["img/foods/4/1.jpg", "img/foods/4/2.jpeg", "img/foods/4/3.png"],
+		ingredient: {
+			vi: [
+				"200g bột bánh xèo",
+				"50ml nước cốt dừa",
+				"300g tôm sú",
+				"300g thịt ba chỉ",
+				"300g nấm rơm",
+				"2 củ hành tây",
+				"1 củ cà rốt",
+				"1 củ cải trắng",
+				"Xà lách, rau cải xanh, rau thơm, giá đỗ, hành lá",
+				"Gia vị: hạt nêm, bột ngọt, muối, nước mắm, bột nghệ, giấm",
+			],
+			en: [
+				"200g pancake flour",
+				"50 ml of coconut milk",
+				"300g black tiger shrimp",
+				"300g pork belly",
+				"300g straw mushrooms",
+				"2 onions",
+				"1 carrot",
+				"1 white radish",
+				"Lettuce, collard greens, herbs, bean sprouts, and green onions",
+				"Seasoning: seasoning, monosodium glutamate, salt, fish sauce, turmeric, vinegar",
+			],
+		},
+		steps: [
+			{
+				name: {
+					vi: "Sơ chế nguyên liệu & chuẩn bị",
+					en: "Mode ingredients & preparation",
+				},
+				content: {
+					vi: `Bước 1: Sơ chế nguyên liệu
+
+					Thịt ba chỉ tươi mua về rửa sạch, cắt thành những miếng mỏng vừa ăn. Nên chọn thịt ba chỉ tươi ngon sáng màu, có độ đàn hồi tốt.
+					Tôm sú mua về, lột vỏ, cắt phần râu cứng, rút chỉ đen ở lưng. Rửa sạch lại với nước.
+					Cho tôm, thịt ba chỉ vào 1 cái tô, ướp cùng ½ muỗng hạt nêm, 1 muỗng tiêu xay. Trộn đều và ướp trong khoảng 15 phút cho thịt và tôm thấm gia vị.
+					Bóc vỏ hành tây, rửa sạch và thái thành lát mỏng.
+					Nhặt gốc, bỏ lá úa, rửa sạch hành lá và thái khúc nhỏ.
+					Cà rốt, củ cải trắng gọt sạch vỏ, rửa sạch rồi bào sợi.
+					Rau thơm, giá đỗ rửa sạch, ngâm với nước muối loãng khoảng 15 – 20 phút. Vớt ra để ráo nước.
+					Bước 2: Pha bột bánh xèo
+					
+					Hòa tan nước cốt dừa cùng khoảng 400ml nước lọc. Cho bột bánh xèo vào.
+					Nêm nếm gia vị cùng 1 muỗng bột nghệ, một ít hạt nêm, muối, rắc hành lá. Khuấy đều cho đến khi bột mịn hoàn toàn và không còn vón cục.
+					Để bột nghỉ khoảng 20 – 30 phút cho bột nở hoàn toàn.
+					Bước 3: Xào nhân bánh xèo
+					Bắc chảo lên, đổ dầu ăn vào, đến khi sôi thì cho thịt vào xào săn với lửa nhỏ.
+					Bước 4: Cách làm nước chấm và đồ chua ăn kèm
+					Pha nước chấm bánh xèo: Trong lúc đi chiên bánh, bạn có thể pha nước chấm bánh xèo theo tỉ lệ sau: 
+					3 muỗng đường 
+					½ chén nước mắm 
+					½ chén nước ấm 
+					1 muỗng nước cốt chanh 
+					Hòa trộn tất cả nguyên liệu rồi cho thêm tỏi, ớt băm nhỏ vào là hoàn thành.
+					
+					Chế biến đồ chua ăn kèm: Củ cải trắng và cà rốt thái sợi cho vào tô, ướp với:
+					2 muỗng đường 
+					5 muỗng giấm 
+					200ml nước lọc 
+					Trộn đều rồi để khoảng 10 phút để cho củ cải, cà rốt mềm ra và ngấm vị.
+					Khi thịt đã chín tới thì vớt ra 1 cái bát. Cho tôm vào, xào trong khoảng 3 – 5 phút cho tôm chín thơm.
+					`,
+					en: `Step 1: Prepare ingredients
+					Fresh bacon is bought, washed, and cut into thin pieces to eat. Should choose fresh and bright bacon with good elasticity.
+					Buy black tiger shrimp, peel them, cut the hard antennae, and remove the black thread on the back. Rinse with water.
+					Put shrimp and bacon in a bowl; marinate with 12 teaspoons seasoning and 1 teaspoon ground pepper. Mix well and marinate for about 15 minutes for the meat and shrimp to absorb the spices.
+					Peel the onion, wash it, and cut it into thin slices.
+					Pick the root, remove the dead leaves, wash the scallions, and cut them into small pieces.
+					Carrots and white radishes, peeled, washed, and grated
+					Wash herbs and bean sprouts and soak them in dilute salt water for about 15–20 minutes. Take them out to drain.
+					Step 2: Mix pancake batter
+					Mix coconut milk with about 400 ml of filtered water. Add the pancake batter.
+					Season to taste with 1 tablespoon of turmeric powder, a little seasoning, salt, and scallions. Sprinkle with scallions. Stir until the dough is completely smooth and there are no lumps.
+					Let the dough rest for about 20–30 minutes for it to fully rise.
+					Step 3: Stir-fry the pancakes.
+					Put the pan on high, pour in the cooking oil, and when it boils, add the meat and sauté it over low heat.
+					Step 4: How to make dipping sauce and sour food to serve
+					Mixing Banh Xeo Dipping Sauce: While frying, you can make Banh Xeo dipping sauce according to the following ratio:
+					3 tablespoons of sugar
+					12 cup fish sauce
+					12 cups of warm water
+					1 tablespoon of lemon juice
+					Mix all ingredients, and then add garlic and minced chili to complete.
+					Prepare sour food to serve: White radish and shredded carrots put in a bowl, marinated with:
+					2 tablespoons of sugar
+					5 tablespoons of vinegar
+					200 ml of filtered water
+					Mix well, and let it sit for about 10 minutes to let the radishes and carrots soften and absorb the flavors.
+					When the meat is cooked, take it out and put it in a bowl. Add shrimp and stir-fry for about 3-5 minutes until shrimp is fragrant.
+					`,
+				},
+			},
+			{
+				name: {
+					vi: "Cách đổ bánh xèo miền Tây",
+					en: "How to pour Western pancakes",
+				},
+				content: {
+					vi: `Bắc chảo lên bếp, đổ 1 muỗng dầu ăn vào đến khi sôi thì đổ 1 vá bột vào. Nghiêng chảo để lớp bột trán đều khắp chảo.
+					Múc tôm, thịt, hành tây và một ít giá lên trên bột bánh. Đậy vung khoảng 30 giây cho bột chín.
+					Chiên bánh đến khi vỏ bánh vàng giòn. Gấp đôi bánh và tiếp tục chiên phần còn lại sao cho bánh giòn đều 2 mặt.
+					Chiên bánh tương tự đến khi hết lượng bột và lượng nhân đã chuẩn bị.
+					Gắp bánh ra đĩa và thưởng thức ngay khi nóng cùng rau thơm. Chấm cùng nước mắm chua ngọt và đồ chua ăn kèm thì ngon hết sẩy.
+					`,
+					en: `Put the pan on the stove, pour in 1 tablespoon of cooking oil until it boils, then pour in 1 patch of flour. Tilt the pan to spread the batter evenly across the pan.
+					Ladle the shrimp, meat, onion, and some bean sprouts on top of the batter. Cover for about 30 seconds until the dough is cooked.
+					Fry until the crust is golden brown. Fold the cake in half and continue to fry the rest so that the cake is crispy on both sides.
+					Fry the cake in the same way until all the dough and the prepared filling are used up.
+					Remove the cake to a plate and enjoy immediately when hot with herbs. Dipping with sweet and sour fish sauce and accompanying sour food is delicious.`,
+				},
+			},
+		],
+		touristAttractions: [11, 12, 13],
+	},
+	{
 		id: 5,
 		name: {
 			vi: "Bánh đa cua",
@@ -346,7 +485,7 @@ const foods: Food[] = [
 			vi: `Bánh đa cua là món ăn ngon đặc trưng của Hải Phòng được rất nhiều người yêu thích. Món ngon mang đậm hương vị đất cảng với vị cay cay, đậm đà, thơm lừng, nóng hổi sẽ khiến mọi thành viên trong gia đình vô cùng thích thú.`,
 			en: `Vietnamese thick noodle soup with crab is a typical, delicious dish of Hai Phong that is loved by many people. Delicious dishes with the bold flavor of port and a spicy, richaromatic, hot taste will make all family members extremely excited.			`,
 		},
-		imgPath: ["img/food/1/1.jpg", "img/food/1/2.jpg", "img/food/1/3.jpg"],
+		imgPath: ["img/foods/5/1.jpg", "img/foods/5/2.jpg", "img/foods/5/3.jpg"],
 		ingredient: {
 			vi: [
 				"500g cua đồng",
@@ -537,133 +676,6 @@ const foods: Food[] = [
 			},
 		],
 		touristAttractions: [14, 15, 16, 17],
-	},
-	{
-		id: 4,
-		name: { vi: "Bánh xèo miền Tây", en: "Crispy Vietnamese Pancake" },
-		introduction: {
-			vi: `Bánh xèo là món ăn dân dã có mặt ở khắp mọi miền đất nước. Gốc tích của bánh xèo xuất hiện đầu tiên ở miền Trung vùng đất đầy nắng và gió, sau đó được lan truyền ra nhiều nơi khác trên cả nước. Ở mỗi miền bánh xèo lại được biến tấu theo nhiều cách khác nhau nhưng luôn mang hương vị đậm đà, khó cưỡng lại được.
-			Bánh xèo có mặt ở miền Tây đã từ rất lâu đời, đến nay đã trở thành một món ăn không thể thiếu trong những buổi hội hè, vui chơi của người dân nơi đây. Bánh xèo miền Tây mang trong mình những nét rất riêng, cái "hồn cốt" của ẩm thực miền Tây Nam Bộ mà không thể lẫn vào đâu được.`,
-			en: `Banh xeo is a popular dish found in all parts of the country. The origin of banh xeo appeared first in the central region of the sunny and windy land and then spread to many other places across the country. In each region, banh xeo is modified in different ways but always has a strong and irresistible flavor.
-			Banh xeo has been present in the West for a long time, and so far it has become an indispensable dish in the festivals and entertainment of the people here. Western pancakes have their own unique features, the "soul" of the cuisine of the Southwest region, that cannot be confused.
-			`,
-		},
-		imgPath: ["img/food/1/1.jpg", "img/food/1/2.jpg", "img/food/1/3.jpg"],
-		ingredient: {
-			vi: [
-				"200g bột bánh xèo",
-				"50ml nước cốt dừa",
-				"300g tôm sú",
-				"300g thịt ba chỉ",
-				"300g nấm rơm",
-				"2 củ hành tây",
-				"1 củ cà rốt",
-				"1 củ cải trắng",
-				"Xà lách, rau cải xanh, rau thơm, giá đỗ, hành lá",
-				"Gia vị: hạt nêm, bột ngọt, muối, nước mắm, bột nghệ, giấm",
-			],
-			en: [
-				"200g pancake flour",
-				"50 ml of coconut milk",
-				"300g black tiger shrimp",
-				"300g pork belly",
-				"300g straw mushrooms",
-				"2 onions",
-				"1 carrot",
-				"1 white radish",
-				"Lettuce, collard greens, herbs, bean sprouts, and green onions",
-				"Seasoning: seasoning, monosodium glutamate, salt, fish sauce, turmeric, vinegar",
-			],
-		},
-		steps: [
-			{
-				name: {
-					vi: "Sơ chế nguyên liệu & chuẩn bị",
-					en: "Mode ingredients & preparation",
-				},
-				content: {
-					vi: `Bước 1: Sơ chế nguyên liệu
-
-					Thịt ba chỉ tươi mua về rửa sạch, cắt thành những miếng mỏng vừa ăn. Nên chọn thịt ba chỉ tươi ngon sáng màu, có độ đàn hồi tốt.
-					Tôm sú mua về, lột vỏ, cắt phần râu cứng, rút chỉ đen ở lưng. Rửa sạch lại với nước.
-					Cho tôm, thịt ba chỉ vào 1 cái tô, ướp cùng ½ muỗng hạt nêm, 1 muỗng tiêu xay. Trộn đều và ướp trong khoảng 15 phút cho thịt và tôm thấm gia vị.
-					Bóc vỏ hành tây, rửa sạch và thái thành lát mỏng.
-					Nhặt gốc, bỏ lá úa, rửa sạch hành lá và thái khúc nhỏ.
-					Cà rốt, củ cải trắng gọt sạch vỏ, rửa sạch rồi bào sợi.
-					Rau thơm, giá đỗ rửa sạch, ngâm với nước muối loãng khoảng 15 – 20 phút. Vớt ra để ráo nước.
-					Bước 2: Pha bột bánh xèo
-					
-					Hòa tan nước cốt dừa cùng khoảng 400ml nước lọc. Cho bột bánh xèo vào.
-					Nêm nếm gia vị cùng 1 muỗng bột nghệ, một ít hạt nêm, muối, rắc hành lá. Khuấy đều cho đến khi bột mịn hoàn toàn và không còn vón cục.
-					Để bột nghỉ khoảng 20 – 30 phút cho bột nở hoàn toàn.
-					Bước 3: Xào nhân bánh xèo
-					Bắc chảo lên, đổ dầu ăn vào, đến khi sôi thì cho thịt vào xào săn với lửa nhỏ.
-					Bước 4: Cách làm nước chấm và đồ chua ăn kèm
-					Pha nước chấm bánh xèo: Trong lúc đi chiên bánh, bạn có thể pha nước chấm bánh xèo theo tỉ lệ sau: 
-					3 muỗng đường 
-					½ chén nước mắm 
-					½ chén nước ấm 
-					1 muỗng nước cốt chanh 
-					Hòa trộn tất cả nguyên liệu rồi cho thêm tỏi, ớt băm nhỏ vào là hoàn thành.
-					
-					Chế biến đồ chua ăn kèm: Củ cải trắng và cà rốt thái sợi cho vào tô, ướp với:
-					2 muỗng đường 
-					5 muỗng giấm 
-					200ml nước lọc 
-					Trộn đều rồi để khoảng 10 phút để cho củ cải, cà rốt mềm ra và ngấm vị.
-					Khi thịt đã chín tới thì vớt ra 1 cái bát. Cho tôm vào, xào trong khoảng 3 – 5 phút cho tôm chín thơm.
-					`,
-					en: `Step 1: Prepare ingredients
-					Fresh bacon is bought, washed, and cut into thin pieces to eat. Should choose fresh and bright bacon with good elasticity.
-					Buy black tiger shrimp, peel them, cut the hard antennae, and remove the black thread on the back. Rinse with water.
-					Put shrimp and bacon in a bowl; marinate with 12 teaspoons seasoning and 1 teaspoon ground pepper. Mix well and marinate for about 15 minutes for the meat and shrimp to absorb the spices.
-					Peel the onion, wash it, and cut it into thin slices.
-					Pick the root, remove the dead leaves, wash the scallions, and cut them into small pieces.
-					Carrots and white radishes, peeled, washed, and grated
-					Wash herbs and bean sprouts and soak them in dilute salt water for about 15–20 minutes. Take them out to drain.
-					Step 2: Mix pancake batter
-					Mix coconut milk with about 400 ml of filtered water. Add the pancake batter.
-					Season to taste with 1 tablespoon of turmeric powder, a little seasoning, salt, and scallions. Sprinkle with scallions. Stir until the dough is completely smooth and there are no lumps.
-					Let the dough rest for about 20–30 minutes for it to fully rise.
-					Step 3: Stir-fry the pancakes.
-					Put the pan on high, pour in the cooking oil, and when it boils, add the meat and sauté it over low heat.
-					Step 4: How to make dipping sauce and sour food to serve
-					Mixing Banh Xeo Dipping Sauce: While frying, you can make Banh Xeo dipping sauce according to the following ratio:
-					3 tablespoons of sugar
-					12 cup fish sauce
-					12 cups of warm water
-					1 tablespoon of lemon juice
-					Mix all ingredients, and then add garlic and minced chili to complete.
-					Prepare sour food to serve: White radish and shredded carrots put in a bowl, marinated with:
-					2 tablespoons of sugar
-					5 tablespoons of vinegar
-					200 ml of filtered water
-					Mix well, and let it sit for about 10 minutes to let the radishes and carrots soften and absorb the flavors.
-					When the meat is cooked, take it out and put it in a bowl. Add shrimp and stir-fry for about 3-5 minutes until shrimp is fragrant.
-					`,
-				},
-			},
-			{
-				name: {
-					vi: "Cách đổ bánh xèo miền Tây",
-					en: "How to pour Western pancakes",
-				},
-				content: {
-					vi: `Bắc chảo lên bếp, đổ 1 muỗng dầu ăn vào đến khi sôi thì đổ 1 vá bột vào. Nghiêng chảo để lớp bột trán đều khắp chảo.
-					Múc tôm, thịt, hành tây và một ít giá lên trên bột bánh. Đậy vung khoảng 30 giây cho bột chín.
-					Chiên bánh đến khi vỏ bánh vàng giòn. Gấp đôi bánh và tiếp tục chiên phần còn lại sao cho bánh giòn đều 2 mặt.
-					Chiên bánh tương tự đến khi hết lượng bột và lượng nhân đã chuẩn bị.
-					Gắp bánh ra đĩa và thưởng thức ngay khi nóng cùng rau thơm. Chấm cùng nước mắm chua ngọt và đồ chua ăn kèm thì ngon hết sẩy.
-					`,
-					en: `Put the pan on the stove, pour in 1 tablespoon of cooking oil until it boils, then pour in 1 patch of flour. Tilt the pan to spread the batter evenly across the pan.
-					Ladle the shrimp, meat, onion, and some bean sprouts on top of the batter. Cover for about 30 seconds until the dough is cooked.
-					Fry until the crust is golden brown. Fold the cake in half and continue to fry the rest so that the cake is crispy on both sides.
-					Fry the cake in the same way until all the dough and the prepared filling are used up.
-					Remove the cake to a plate and enjoy immediately when hot with herbs. Dipping with sweet and sour fish sauce and accompanying sour food is delicious.`,
-				},
-			},
-		],
-		touristAttractions: [11, 12, 13],
 	},
 ];
 
