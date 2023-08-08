@@ -12,9 +12,9 @@ const foods: Food[] = [
 			`,
 		},
 		imgPath: [
-			"/img/foods/1/1.png",
-			"/img/foods/1/2.jpg",
-			"/img/foods/1/3.jpg",
+			"/vietnamse-cookery/img/foods/1/1.png",
+			"/vietnamse-cookery/img/foods/1/2.jpg",
+			"/vietnamse-cookery/img/foods/1/3.jpg",
 		],
 		ingredient: {
 			vi: [
@@ -113,9 +113,9 @@ const foods: Food[] = [
 			en: `Bun cha is a Vietnamese dish consisting of vermicelli, grilled pork rolls over charcoal, and a bowl of sweet and sour fish sauce. The dish originates from the North of Vietnam and is the most durable gift of Hanoi, so it can be considered one of the typical specialties of Hanoi cuisine. Bun cha is similar to grilled meat vermicelli in the Central and Southern regions, but the mixed fish sauce has a lighter taste.`,
 		},
 		imgPath: [
-			"/img/foods/2/1.jpg",
-			"/img/foods/2/2.png",
-			"/img/foods/2/3.jpg",
+			"/vietnamse-cookery/img/foods/2/1.jpg",
+			"/vietnamse-cookery/img/foods/2/2.png",
+			"/vietnamse-cookery/img/foods/2/3.jpg",
 		],
 		ingredient: {
 			vi: [
@@ -221,9 +221,9 @@ const foods: Food[] = [
 			en: `Shrimp and meat rolls are delicious, highly nutritious, and suitable for days when you feel bored with rice. This is the perfect choice. Let's go to the kitchen to make this delicious salad roll right away.`,
 		},
 		imgPath: [
-			"/img/foods/3/1.jpg",
-			"/img/foods/3/2.jpg",
-			"/img/foods/3/3.jpg",
+			"/vietnamse-cookery/img/foods/3/1.jpg",
+			"/vietnamse-cookery/img/foods/3/2.jpg",
+			"/vietnamse-cookery/img/foods/3/3.jpg",
 		],
 		ingredient: {
 			vi: [
@@ -359,9 +359,9 @@ const foods: Food[] = [
 			`,
 		},
 		imgPath: [
-			"/img/foods/4/1.jpg",
-			"/img/foods/4/2.jpeg",
-			"/img/foods/4/3.png",
+			"/vietnamse-cookery/img/foods/4/1.jpg",
+			"/vietnamse-cookery/img/foods/4/2.jpeg",
+			"/vietnamse-cookery/img/foods/4/3.png",
 		],
 		ingredient: {
 			vi: [
@@ -490,9 +490,9 @@ const foods: Food[] = [
 			en: `Vietnamese thick noodle soup with crab is a typical, delicious dish of Hai Phong that is loved by many people. Delicious dishes with the bold flavor of port and a spicy, richaromatic, hot taste will make all family members extremely excited.			`,
 		},
 		imgPath: [
-			"/img/foods/5/1.jpg",
-			"/img/foods/5/2.jpg",
-			"/img/foods/5/3.jpg",
+			"/vietnamse-cookery/img/foods/5/1.jpg",
+			"/vietnamse-cookery/img/foods/5/2.jpg",
+			"/vietnamse-cookery/img/foods/5/3.jpg",
 		],
 		ingredient: {
 			vi: [

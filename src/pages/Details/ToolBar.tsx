@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { languageSelector } from "../../app/selectors";
 import { useNavigate } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { AiOutlineHeart,  } from "react-icons/ai"; // AiFillHeart
 import viIcon from "../../assets/img/vi.png";
 import enIcon from "../../assets/img/en.png";
 import styles from "./details.module.css";

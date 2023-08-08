@@ -7,7 +7,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Chùa Thiên Mụ",
 			en: "Thien Mu Pagoda",
 		},
-		imgPath: ["img/locations/1/1.png", "img/locations/1/2.png", "img/locations/1/3.png"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/1/1.png",
+			"/vietnamse-cookery/img/locations/1/2.png",
+			"/vietnamse-cookery/img/locations/1/3.png",
+		],
 		introduction: {
 			vi: `Địa điểm: Đường Nguyễn Phúc Nguyên, thành phố Huế, tỉnh Thừa Thiên Huế.
 
@@ -37,7 +41,12 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Cố đô Huế",
 			en: "The ancient capital of Hue",
 		},
-		imgPath: ["img/locations/2/1.png", "img/locations/2/2.png", "img/locations/2/3.png", "img/locations/2/4.png"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/2/1.png",
+			"/vietnamse-cookery/img/locations/2/2.png",
+			"/vietnamse-cookery/img/locations/2/3.png",
+			"/vietnamse-cookery/img/locations/2/4.png",
+		],
 		introduction: {
 			vi: `Cố đô Huế là địa điểm du lịch nổi tiếng nhất của thành phố Huế, được UNESCO công nhận là di sản văn hóa thế giới năm 1993. Và đã được Thủ tướng chính phủ Việt Nam đưa vào danh sách xếp hạng 95 di tích quốc gia đặc biệt quan trọng của Việt Nam.
       Đây là thủ phủ của các chúa Nguyễn từ năm 1687 đến 1774. Là thủ đô của triều đại Tây Sơn từ năm 1788 khi Hoàng đế Quang Trung tức Nguyễn Huệ lên ngôi.
@@ -60,7 +69,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Quảng trường Ba Đình – Lăng Bác",
 			en: "Ba Dinh Square - Uncle Ho's Mausoleum",
 		},
-		imgPath: ["img/locations/3/1.jpg", "img/locations/3/2.jpg", "img/locations/3/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/3/1.jpg",
+			"/vietnamse-cookery/img/locations/3/2.jpg",
+			"/vietnamse-cookery/img/locations/3/3.jpg",
+		],
 		introduction: {
 			vi: `Nếu đã đặt chân tới mảnh đất ngàn năm văn hiến thì Lăng Bác – Quảng trường Ba Đình là địa điểm du lịch ở Hà Nội mà các bạn không thể bỏ qua. Nơi đây là trung tâm chính trị của Việt Nam với nhà Quốc hội, Phủ Chủ tịch, Bảo tàng Hồ Chí Minh,…
       Lăng Bác là nơi lưu giữ thi hài của vị lãnh tụ kính yêu. Bên ngoài lăng là những hàng tre xanh bát ngát. Lăng chủ tịch mở cửa vào sáng thứ 3,4,5,7 và chủ nhật. Khi vào viếng lăng Bác, bạn chú ý ăn mặc chỉnh tề, không đem theo các thiết bị điện tử ghi hành và giữ trật tự trong lăng.
@@ -77,7 +90,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Văn Miếu – Quốc Tử Giám",
 			en: "Quoc Tu Giam Temple",
 		},
-		imgPath: ["img/locations/4/1.jpg", "img/locations/4/2.webp", "img/locations/4/3.webp"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/4/1.jpg",
+			"/vietnamse-cookery/img/locations/4/2.webp",
+			"/vietnamse-cookery/img/locations/4/3.webp",
+		],
 		introduction: {
 			vi: `Nếu kể tên các địa điểm du lịch Hà Nội bậc nhất xưa và nay có lẽ ai cũng sẽ nghĩ ngay đến Văn Miếu Quốc Tử Giám. Đây là một quần thể kiến trúc văn hoá hàng đầu và là niềm tự hào của người dân Thủ đô khi nhắc đến truyền thống ngàn năm văn hiến của Thăng Long – Đông Đô – Hà Nội.
       Văn Miếu quốc tử giám là điểm đến của nhiều học sinh, sinh viên mỗi kỳ thi quan trọng để cầu may mắn.
@@ -95,7 +112,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Nhà thờ lớn Hà Nội",
 			en: "St. Joseph's Cathedral, Hanoi",
 		},
-		imgPath: ["img/locations/5/1.jpg", "img/locations/5/2.jpg", "img/locations/5/3.webp"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/5/1.jpg",
+			"/vietnamse-cookery/img/locations/5/2.jpg",
+			"/vietnamse-cookery/img/locations/5/3.webp",
+		],
 		introduction: {
 			vi: `Nằm ở 40 phố Nhà Chung, phường Hàng Trống, Nhà thờ lớn là một trong những điểm đến thú vị ở Hà Nội, nơi lui tới không chỉ của các tín đồ theo đạo mà còn là địa điểm quen thuộc của giới trẻ, khách du lịch tứ phương. Nhà thờ được thiết kế theo phong cách kiến trúc Gothic trung cổ châu  u với bức tường xây cao, có mái vòm và nhiều cửa sổ.
 			Bên trong nhà thờ, khu cung thánh chạm trổ hoa văn bằng gỗ sơn son thiếp vàng kết hợp với hệ thống tranh Thánh bằng kính màu. Cảm giác như được đứng trong một lâu đài cổ kính cùng điệu nhạc cổ điển, chắc hẳn bạn đang rất muốn thử phải không.
@@ -111,7 +132,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Nhà thờ Đức Bà",
 			en: "Notre Dame Cathedral",
 		},
-		imgPath: ["img/locations/6/1.webp", "img/locations/6/2.png", "img/locations/6/3.webp"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/6/1.webp",
+			"/vietnamse-cookery/img/locations/6/2.png",
+			"/vietnamse-cookery/img/locations/6/3.webp",
+		],
 		introduction: {
 			vi: `Nhà thờ Đức Bà là một trong những địa điểm mà bạn đích thị không thể bỏ lỡ check-in khi đến Sài Gòn bởi vẻ đẹp cổ kính và ý nghĩa biểu tượng của nó. Nằm ở khu trung tâm của Quận 1, khu vực nhà thờ thể hiện rất rõ dấu ấn Sài Thành khi mà bao xung quanh khu nhà thờ cổ kính, rêu phong và đậm tính lịch sử là những tòa nhà chọc trời, hiện đại và sầm uất hơn thảy. Nơi đây nổi bật với kiến trúc Châu  u kết hợp phong cách Roman và Gothic tuyệt đẹp, cùng cặp chuông lớn nhất Việt Nam. Nhà thờ Đức Bà là ngôi thánh đường đẹp nhất và quan trọng nhất của giáo phận Sài Gòn, niềm tự hào của người dân thành phố.
 			Điều tiện lợi còn nằm ở chỗ, từ vị trí này bạn có thể di chuyển sang các vị trí tham quan khác ở Sài Gòn một cách nhanh chóng như dinh Độc Lập, mua sắm ở Diamond Plaza hay qua dạo phố Đồng Khởi, ngắm hồ Con Rùa hay đơn giản là thử cảm giác uống cafe bệt ở đường Hàn Thuyên.
@@ -126,7 +151,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Bến Nhà Rồng",
 			en: "Nha Rong Harbor",
 		},
-		imgPath: ["img/locations/7/1.webp", "img/locations/7/2.png", "img/locations/7/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/7/1.webp",
+			"/vietnamse-cookery/img/locations/7/2.png",
+			"/vietnamse-cookery/img/locations/7/3.jpg",
+		],
 		introduction: {
 			vi: `Bến Nhà Rồng hay còn có tên gọi khác là Bảo tàng Hồ Chí Minh, đây chính là nơi Bác Hồ ra đi tìm đường cứu nước vào năm 1911. Điểm đặc biệt trong kiến trúc Bến Nhà Rồng nằm ở nóc nhà gắn hình rồng, ở giữa mang chiếc phù hiệu “Đầu ngựa và chiếc mỏ neo”.
 			Bến Nhà Rồng (Ảnh: Sưu tầm)
@@ -143,7 +172,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Phố đi bộ Nguyễn Huệ",
 			en: "Nguyen Hue Walking Street",
 		},
-		imgPath: ["img/locations/8/1.jpg", "img/locations/8/2.jpg", "img/locations/8/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/8/1.jpg",
+			"/vietnamse-cookery/img/locations/8/2.jpg",
+			"/vietnamse-cookery/img/locations/8/3.jpg",
+		],
 		introduction: {
 			vi: `Thời gian gần đây, con đường Nguyễn Huệ đã được xây dựng thành phố đi bộ cho người dân Sài Thành và trở thành một con đường vô cùng sôi động vào các dịp lễ hội và các ngày cuối tuần. Hai bên con đường này sở hữu rất nhiều khách sạn, khu mua sắm cao cấp và những căn nhà đã tồn tại lâu đời mang hơi thở kiến trúc châu âu một thời.
 			Đi thẳng đường Nguyễn Huệ theo hướng Đông Nam sẽ đến con đường Tôn Đức Thắng rực rỡ ở ven sông Sài Gòn. Đặc biệt hơn, cứ mỗi dịp Tết đến xuân về, con đường Nguyễn Huệ được phủ trong lung linh các sắc hoa tươi mới và rực rỡ sức sống.
@@ -159,7 +192,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Chợ Bến Thành",
 			en: "Ben Thanh Market",
 		},
-		imgPath: ["img/locations/9/1.jpg", "img/locations/9/2.jpg", "img/locations/9/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/9/1.jpg",
+			"/vietnamse-cookery/img/locations/9/2.jpg",
+			"/vietnamse-cookery/img/locations/9/3.jpg",
+		],
 		introduction: {
 			vi: `Giờ mở cửa: 7h00 – 19h00 hàng ngày
 			Địa chỉ: Nằm giữa các đường Phan Bội Châu – Phan Chu Trinh – Lê Thánh Tôn – Công trường Quách Thị Trang, Phường Bến Thành – Quận 1.
@@ -177,7 +214,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Bảo tàng lịch sử Việt Nam",
 			en: "Vietnam History Museum",
 		},
-		imgPath: ["img/locations/10/1.webp", "img/locations/10/2.webp", "img/locations/10/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/10/1.webp",
+			"/vietnamse-cookery/img/locations/10/2.webp",
+			"/vietnamse-cookery/img/locations/10/3.jpg",
+		],
 		introduction: {
 			vi: `Tiền thân là Viện Bảo tàng Blanchard de la Brosse, bảo tàng lịch sử Việt Nam sẽ cho bạn cơ hội chiêm ngưỡng hàng nghìn hiện vật có giá trị và tìm hiểu thêm về lịch sử Việt Nam. Đây thực sự là một địa điểm mà du khách nước ngoài rất ưa chuộng để được tìm hiểu về quá khứ, lịch sử Việt Nam sâu sắc hơn. Không những là nơi trưng bày những hiện vật có ý nghĩa mà đây còn là nơi chứa hơn 25.000 đầu sách báo tạp chí tài liệu phục vụ cho công việc nghiên cứu khảo cổ, dân tộc học, sử học…
 			`,
@@ -190,7 +231,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Chợ nổi Cái Răng (Cần Thơ)",
 			en: "Cai Rang Floating Market (Can Tho)",
 		},
-		imgPath: ["img/locations/11/1.jpg", "img/locations/11/2.webp", "img/locations/11/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/11/1.jpg",
+			"/vietnamse-cookery/img/locations/11/2.webp",
+			"/vietnamse-cookery/img/locations/11/3.jpg",
+		],
 		introduction: {
 			vi: `Từ lâu đã là một điểm tham quan du lịch đặc sắc của vùng Đồng bằng sông nước Cửu Long nói chung và thành phố Cần Thơ nói riêng. Chợ nổi đã thu hút nhiều du khách trong, ngoài nước và đã được Tạp chí du lịch Rough Guide của Anh bình chọn là một trong 10 chợ ấn tượng nhất thế giới.
 			Chợ nổi Cái Răng nằm trên sông Cái Răng, gần cầu Cái Răng (quận Cái Răng), cách trung tâm thành phố Cần Thơ khoảng 6 km đường bộ và mất 30 phút nếu đi bằng thuyền từ bến Ninh Kiều (quận Ninh Kiều) để xuôi thuyền trên sông về chợ nổi. Theo Viện Kinh tế Xã hội Cần Thơ, chợ nổi Cái Răng khi mới hình thành nằm ở vị trí giao nhau giữa bốn con sông Cần Thơ, Đầu Sấu, Cái Sơn, Cái Răng Bé, liền kề với chợ Cái Răng trên bờ.  
@@ -209,7 +254,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Làng Nổi Tân Lập, Long An",
 			en: "Tan Lap Floating Village, Long An",
 		},
-		imgPath: ["img/locations/12/1.png", "img/locations/12/2.jpg", "img/locations/12/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/12/1.png",
+			"/vietnamse-cookery/img/locations/12/2.jpg",
+			"/vietnamse-cookery/img/locations/12/3.jpg",
+		],
 		introduction: {
 			vi: `Làng Nổi được nhiều du khách biết đến vẻ đẹp nguyên sơ của hệ sinh vật trong những khu du lịch giải trí, khám phá độc đáo. Làng Nổi có tên gọi khác là làng Nổi Tân Lập, là khu du lịch sinh thái – địa điểm du lịch miền Tây nằm sâu trong lòng Đồng Tháp Mười.
 			Trước kia, nơi đây là một vùng rừng quanh năm ngập nước cho nên người dân thiết kế các ngôi nhà kiểu dáng đơn giản, có thể nâng  cao theo mực nước lũ dâng lên, do vậy người ta gọi là làng Nổi.
@@ -225,7 +274,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Vườn quốc gia Tràm Chim, Đồng Tháp",
 			en: "Tram Chim National Park, Dong Thap",
 		},
-		imgPath: ["img/locations/13/1.jpg", "img/locations/13/2.jpg", "img/locations/13/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/13/1.jpg",
+			"/vietnamse-cookery/img/locations/13/2.jpg",
+			"/vietnamse-cookery/img/locations/13/3.jpg",
+		],
 		introduction: {
 			vi: `Vườn quốc gia Tràm Chim là địa điểm du lịch miền Tây được yêu thích bởi vẻ đẹp nguyên sơ, thảm thực vật phong phú. Nơi đây là nơi cư trú của nhiều loài chim quý, các loài nằm trong sách đỏ Việt Nam. Vườn quốc gia đóng vai trò đặc biệt quan trọng trong công việc bảo tồn hệ sinh thái rừng ngập nước cùng hệ động thực vật thuộc địa mang nguồn gen quý hiếm.
 			Đến vườn quốc gia Tràm Chim, bạn sẽ được chiêm ngưỡng rừng tràm xanh bạt ngàn với các loài chim quý thuộc địa và chim di cư, thoải mái vui chơi cùng các loài sinh vật sinh sống trong khu rừng ngập nước. Tận hưởng bầu không khí trong trẻo hay chụp hình check-in với những loài chim quý nơi đây cũng là những trải nghiệm tuyệt vời dành cho các du khách 
@@ -241,7 +294,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Bãi biển Đồ Sơn – địa điểm nổi tiếng nhất ở Hải Phòng",
 			en: "Do Son Beach is the most famous place in Hai Phong.",
 		},
-		imgPath: ["img/locations/14/1.jpg", "img/locations/14/2.jpg", "img/locations/14/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/14/1.jpg",
+			"/vietnamse-cookery/img/locations/14/2.jpg",
+			"/vietnamse-cookery/img/locations/14/3.jpg",
+		],
 		introduction: {
 			vi: `Đồ Sơn là một quận thuộc TP Hải Phòng cách trung tâm thành phố khoảng 20km. Không những là khu nghỉ mát và tắm biển với nhiều biển nhỏ, khung cảnh đẹp tuyệt vời thu hút được đông đảo khách du lịch vào mùa hè mỗi năm mà còn nổi tiếng nhất ở Miền Bắc nước ta. Đồ sơn là một bán đảo nhỏ với bờ biển xanh kéo dài hòa quyện với những cánh rừng nguyên sinh tạo nên một vẻ đẹp gây chấn động lòng người. Mọi du khách thập phương đến đây đều được leo núi, ngắm nhìn ba thế biển đẹp, tắm biển…`,
 			en: `Do Son is a district in Hai Phong City, about 20 kilometers from the city center. Not only is it a resort and beach resort with many small beaches and wonderful scenery that attracts a large number of tourists in the summer every year, but it is also the most famous in the North of our country. Do Son is a small peninsula with a long green coast blending with primeval forests, creating a beauty that shakes people's hearts. All visitors from all over the world come here to climb the mountain, see the three beautiful sea worlds, swim in the sea, etc.
@@ -254,7 +311,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Khu nghỉ dưỡng – sinh thái Cát Bà",
 			en: "Cat Ba eco-resort",
 		},
-		imgPath: ["img/locations/15/1.webp", "img/locations/15/2.webp", "img/locations/15/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/15/1.webp",
+			"/vietnamse-cookery/img/locations/15/2.webp",
+			"/vietnamse-cookery/img/locations/15/3.jpg",
+		],
 		introduction: {
 			vi: `Từ đất liền du khách đi tham quan quan đảo Cát Bà bằng tàu hay bằng đường cao tốc. Với hàng trăm hàng nghìn biển đảo nhỏ nổi mênh mông trên giữa biển nước xanh. Đảo còn có cả một rừng nguyên sinh tồn trữ nhiều các loài động vật quý hiếm, những bãi biển nhân tạo, những con suối chảy róc rách…Cát Bà là nơi kết hợp của rừng và biển tạo nên một khung cảnh non nước nghìn thu trong xanh vắt cả đất trời. Đảo Cát Bà còn có cả đảo khỉ, đảo ông…đều là những địa điểm du lịch Hải Phòng nổi tiếng`,
 			en: `From the mainland, visitors go to Cat Ba Island by train or highway. With hundreds of thousands of small islands floating in the middle of the blue sea. The island also has a primeval forest that stores many rare and precious animals, artificial beaches, murmuring streams, etc.Cat Ba is a place where the forest and the sea combine to create a landscape of thousands of autumn leaves. clear blue sky and earth. Cat Ba Island, Monkey Island, Ong Island, etc. are famous tourist attractions in Hai Phong.
@@ -267,7 +328,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Vịnh Lan Hạ",
 			en: "Lan Ha Bay",
 		},
-		imgPath: ["img/locations/16/1.jpg", "img/locations/16/2.jpg", "img/locations/16/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/16/1.jpg",
+			"/vietnamse-cookery/img/locations/16/2.jpg",
+			"/vietnamse-cookery/img/locations/16/3.jpg",
+		],
 		introduction: {
 			vi: `Vịnh Lan Hạ được ví như Vịnh Hạ Long thứ 2 của nước ta mang một vẻ đẹp tựa như chốn thần tiên còn đọng lại theo thời gian. Nét đặc sắc của Vịnh này là cuốn hút, giữ chân, lôi kéo du khách muốn quay lại nơi đây một lần nữa để khám phá trọn vẹn cảnh sắc nơi đây.`,
 			en: `Lan Ha Bay is likened to the second Ha Long Bay of our country, with a fairy-like beauty left over from time. The unique feature of this bay is to attract, retain, and entice visitors to want to come back here again to fully explore the scenery.
@@ -280,7 +345,11 @@ const touristAttractions: TouristAttraction[] = [
 			vi: "Núi Voi",
 			en: "Elephant Mountain",
 		},
-		imgPath: ["img/locations/17/1.jpg", "img/locations/17/2.jpg", "img/locations/17/3.jpg"],
+		imgPath: [
+			"/vietnamse-cookery/img/locations/17/1.jpg",
+			"/vietnamse-cookery/img/locations/17/2.jpg",
+			"/vietnamse-cookery/img/locations/17/3.jpg",
+		],
 		introduction: {
 			vi: `Núi Voi là ngọn núi cao nhất ở phía bắc Kiến An, có một quần thể thiên nhiên vô cùng phong phú. Thế nhưng lại mang một vẻ đẹp hoang sơ đầy quyến rũ. Núi Voi là địa điểm lý tưởng dành cho khách du lịch lựa chọn cho hành trình trải nghiệm, khám phá vẻ đẹp nơi đây. Hơn thế nữa Núi Voi còn có một quần thể hang động danh lam thắng cảnh nổi tiếng như: hang cá chép, hang bể, hang chiêng…Trong mỗi hang động đều mang một vẻ đẹp độc đáo riêng như nhũ đá, đầu rồng, hổ phục, đầu voi…
 			`,
