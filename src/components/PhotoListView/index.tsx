@@ -1,19 +1,18 @@
-import { Food } from "../../types/interface";
 import { useId } from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const PhotoListView = ({
-	food,
+	imgPaths,
 	height = 300,
 }: {
-	food: Food;
+	imgPaths: string[];
 	height?: number;
 }) => {
 	const carouselID = useId();
 	const imgRendered = (
 		<div id={carouselID} className="carousel slide" data-bs-ride="carousel">
 			<div className="carousel-inner">
-				{food.imgPath.map((path, index) => (
+				{imgPaths.map((path, index) => (
 					<div
 						key={path}
 						className={`carousel-item ${

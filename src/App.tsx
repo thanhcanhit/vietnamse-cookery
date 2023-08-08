@@ -3,6 +3,8 @@ import ControlBar from "./components/ControlBar";
 import Home from "./pages/Home";
 import "./App.css";
 import Detail from "./pages/Details";
+import TouristAttractions from "./pages/TouristAttraction";
+import Favorite from "./pages/Favorite";
 
 function App() {
 	return (
@@ -10,8 +12,12 @@ function App() {
 			<BrowserRouter basename="vietnamse-cookery">
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/favorite" element={<h1>My list</h1>} />
+					<Route path="/favorite" element={<Favorite />} />
 					<Route path="/food/:id" element={<Detail />} />
+					<Route
+						path="/location/:foodId"
+						element={<TouristAttractions />}
+					/>
 					<Route
 						path="*"
 						element={

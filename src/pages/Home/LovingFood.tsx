@@ -21,7 +21,7 @@ const LovingFood = ({ food }: LovingType) => {
 					: "Món ăn được yêu thích"}
 			</h2>
 			<div className={styles.lovingFood}>
-				<PhotoListView food={food} height={300} />
+				<PhotoListView imgPaths={food.imgPath} height={300} />
 				<Link
 					to={`/food/${food.id}`}
 					style={{ textDecoration: "none" }}

@@ -1,0 +1,41 @@
+/* Toolbar */
+.toolbar {
+  color: var(--primary-color);
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: .25rem .75rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  z-index: 100;
+}
+
+.toolbar>div {
+  padding: .5rem 1rem;
+}
+
+.toolbarRight {
+  align-items: center;
+  display: flex;
+  gap: 1rem
+}
+
+.langButton {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.langButton img {
+  display: block;
+  width: 100%;
+}
+
+.bold {
+  font-weight: 700;
+}

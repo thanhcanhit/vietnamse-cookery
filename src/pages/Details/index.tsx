@@ -2,8 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { foodsSelector, languageSelector } from "../../app/selectors";
 import PhotoListView from "../../components/PhotoListView";
-import ToolBar from "./ToolBar";
-// import styles from "./details.module.css";
+import ToolBar from "../../components/Toolbar";
 import { useEffect } from "react";
 import { setCurrentFoodView } from "../../app/rootSlice";
 import HighlightText from "./HighlightText";
@@ -90,7 +89,7 @@ const Detail = () => {
 				<h1 className="heading text-center py-2">{food.name[lang]}</h1>
 				<p className="fs-5">{food.introduction[lang]}</p>
 			</div>
-			<PhotoListView food={food} />
+			<PhotoListView imgPaths={food.imgPath} />
 			<div className="container fs-5 py-4">{accoridonRendered}</div>
 		</div>
 	);
