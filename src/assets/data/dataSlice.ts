@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import foods from "./food";
+import foods from "./foods";
 import touristAttractions from "./touristAttractions";
 
 const dataSlice = createSlice({

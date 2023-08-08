@@ -18,7 +18,11 @@ html {
 }
 
 .color-primary {
-  color: #f6427e;
+  color: var(--primary-color);
+}
+
+.color-text{
+  color: var(--text-color)
 }
 
 .pc-notice {

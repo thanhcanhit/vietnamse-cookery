@@ -1,15 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-type Language = ("en" | "vi");
+export type Language = "en" | "vi";
 
-const initialState: Language = "en";
+const localLanguage = (() => {
+	const localDataText = localStorage.getItem("STORE");
+	if (!localDataText) return null;
+	const localData = JSON.parse(localDataText);
+	return localData.language;
+})();
+
+const initialState: Language = localLanguage || "en";
 
 const langSlice = createSlice({
 	name: "language",
 	initialState: initialState,
 	reducers: {
 		changeLanguage: (_state, action) => {
-			_state = action.payload;
+			return action.payload;
 		},
 	},
 });

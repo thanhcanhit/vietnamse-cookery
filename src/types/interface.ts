@@ -12,8 +12,8 @@ interface Step {
 		en: string;
 	};
 	content: {
-		vi: string | string[];
-		en: string | string[];
+		vi: string ;
+		en: string ;
 	};
 }
 

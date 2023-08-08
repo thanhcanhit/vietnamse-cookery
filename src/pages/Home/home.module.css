@@ -4,7 +4,7 @@
 
 .home {
   color: #2c2c2c;
-  background-color: rgba(245, 245, 245, 0.476);
+  background-color: rgb(251, 251, 251);
 }
 
 .container {
@@ -78,7 +78,7 @@
   text-decoration: none;
   color: var(--text-color);
   font-weight: 600;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(251, 251, 251);
   padding: .5rem 1rem;
   text-transform: capitalize;
 }

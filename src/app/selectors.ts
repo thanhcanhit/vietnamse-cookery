@@ -8,6 +8,7 @@ const touristAttractionSelector = (state: RootState) =>
 // Language
 const languageSelector = (state: RootState) => state.language;
 
+
 export {
 	dataSelector,
 	foodsSelector,

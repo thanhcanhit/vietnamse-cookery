@@ -2,9 +2,12 @@ import { NavLink } from "react-router-dom";
 import { IconType } from "react-icons/lib/esm/iconBase";
 import { PiCookingPotBold } from "react-icons/pi";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
+import { FiBookOpen } from "react-icons/fi";
 import styles from "./controlBar.module.css";
 import { useSelector } from "react-redux";
 import { languageSelector } from "../../app/selectors";
+import { currentFoodViewSelector } from "../../app/rootSlice";
 
 type ControlItem = {
 	path: string;
@@ -34,14 +37,41 @@ const controlList: ControlItem[] = [
 	},
 ];
 
+const controlList2: ControlItem[] = [
+	{
+		path: "/food",
+		display: {
+			vi: "Công thức",
+			en: "Recipe",
+		},
+		icon: FiBookOpen,
+	},
+	{
+		path: "/location",
+		display: {
+			vi: "Du lịch cùng món ăn",
+			en: "Travel with food",
+		},
+		icon: IoLocationOutline,
+	},
+];
+
 const ControlBar = () => {
 	const language = useSelector(languageSelector);
+	const currentFoodViewId = useSelector(currentFoodViewSelector);
+
+	const itemList = currentFoodViewId ? controlList2 : controlList;
+
 	return (
 		<nav className={styles.controlBar}>
-			{controlList.map((item: ControlItem) => (
+			{itemList.map((item: ControlItem) => (
 				<NavLink
 					key={item.path}
-					to={item.path}
+					to={
+						currentFoodViewId
+							? `${item.path}/${currentFoodViewId}`
+							: item.path
+					}
 					className={({ isActive }) => {
 						const draft = styles.controlItem;
 
