@@ -6,7 +6,11 @@ import LovingFood from "./LovingFood";
 import Trending from "./Trending";
 import { MdFastfood } from "react-icons/md";
 import FoodItem from "./FoodItem";
-import { searchTextSelector, setCurrentFoodView } from "../../app/rootSlice";
+import {
+	searchTextChange,
+	searchTextSelector,
+	setCurrentFoodView,
+} from "../../app/rootSlice";
 import { Language } from "../../app/langSlice";
 import { removeAccents } from "../../utility/textTransfer";
 import { useEffect } from "react";
@@ -23,7 +27,11 @@ const Home = () => {
 
 	useEffect(() => {
 		dispatch(setCurrentFoodView({ id: null }));
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+
+		return () => {
+			dispatch(searchTextChange({ text: "" }));
+		};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	// Tìm bắt đầu bằng search text (bỏ dấu và chuyển thành chữ thường)
