@@ -1,40 +1,32 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { foodsSelector, languageSelector } from "../../app/selectors";
 import PhotoListView from "../../components/PhotoListView";
 import ToolBar from "./ToolBar";
-import styles from "./details.module.css";
-
-const HighlightText = ({ paragraph }: { paragraph: string }) => {
-	// Search :
-	if (paragraph.includes(":"))
-		return (
-			<p>
-				<b>{paragraph.slice(0, paragraph.indexOf(":"))}</b>
-				{paragraph.slice(paragraph.indexOf(":"), paragraph.length)}
-			</p>
-		);
-
-	// Search by keyword
-	const keywords = ["Bước", "Step", "Finnaly"];
-	const isBold = keywords.some((keyword) =>
-		paragraph.toLowerCase().includes(keyword.toLowerCase())
-	);
-
-	return <p className={isBold ? styles.bold : ""}>{paragraph}</p>;
-};
+// import styles from "./details.module.css";
+import { useEffect } from "react";
+import { setCurrentFoodView } from "../../app/rootSlice";
+import HighlightText from "./HighlightText";
 
 const Detail = () => {
 	const { id } = useParams();
 	const foods = useSelector(foodsSelector);
 	const food = foods.find((food) => food.id === Number(id));
 	const lang = useSelector(languageSelector);
+	const dispatch = useDispatch();
 
 	if (!food) return <div>Some thing are wrong!</div>;
 
+	// eslint-disable-next-line react-hooks/rules-of-hooks
+	useEffect(() => {
+		dispatch(setCurrentFoodView({ id: Number(id) }));
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
+
 	const ingredientRendered = (
 		<div className="accordion-item show">
-			<h2 className="accordion-header">
+			<h2 className="accordion-header  bg-white">
 				<button
 					className="accordion-button bg-white heading fs-4"
 					type="button"
@@ -46,10 +38,10 @@ const Detail = () => {
 			</h2>
 			<div
 				id="ingredient"
-				className="accordion-collapse collapse show"
+				className="accordion-collapse collapse show bg-white"
 				data-bs-parent="#accordionMain"
 			>
-				<div className="accordion-body fs-6">
+				<div className="accordion-body fs-6  bg-white">
 					{food.ingredient[lang].map((item, index) => (
 						<li key={index}>{item}</li>
 					))}
@@ -72,7 +64,7 @@ const Detail = () => {
 			</h2>
 			<div
 				id={index.toString()}
-				className="accordion-collapse collapse show"
+				className="accordion-collapse collapse show bg-white"
 				data-bs-parent="#accordionMain"
 			>
 				<div className="accordion-body fs-6">
@@ -92,7 +84,7 @@ const Detail = () => {
 	);
 
 	return (
-		<div style={{ marginTop: 80 }}>
+		<div style={{ marginTop: 60 }}>
 			<ToolBar />
 			<div className="container">
 				<h1 className="heading text-center py-2">{food.name[lang]}</h1>

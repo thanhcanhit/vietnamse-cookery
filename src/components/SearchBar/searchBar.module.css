@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   background-color: white;
-  padding-bottom: 1rem;
+  padding-bottom: .75rem;
   animation: searchBarSlideDown .7s ease;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   z-index: 100;

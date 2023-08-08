@@ -8,10 +8,9 @@ import { Language } from "../../app/langSlice";
 
 type LovingType = {
 	food: Food;
-	onClick: (id: number) => void;
 };
 
-const LovingFood = ({ food, onClick }: LovingType) => {
+const LovingFood = ({ food }: LovingType) => {
 	const language: Language = useSelector(languageSelector);
 
 	return (
@@ -26,7 +25,6 @@ const LovingFood = ({ food, onClick }: LovingType) => {
 				<Link
 					to={`/food/${food.id}`}
 					style={{ textDecoration: "none" }}
-					onClick={() => onClick(food.id)}
 				>
 					<h3 className={styles.lovingFoodName}>
 						{food.name[language]}

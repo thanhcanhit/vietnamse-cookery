@@ -8,12 +8,11 @@ import { Language } from "../../app/langSlice";
 
 type TrendingType = {
 	foods: Food[];
-	onClick: (id: number) => void;
 };
 
-const Trending = ({ foods, onClick }: TrendingType) => {
+const Trending = ({ foods,  }: TrendingType) => {
 	const foodListRendered = foods.map((food) => (
-		<FoodItem food={food} key={food.id} onClick={() => onClick(food.id)} />
+		<FoodItem food={food} key={food.id}/>
 	));
 
 	const language: Language = useSelector(languageSelector);

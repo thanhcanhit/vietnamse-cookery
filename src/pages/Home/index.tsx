@@ -6,13 +6,10 @@ import LovingFood from "./LovingFood";
 import Trending from "./Trending";
 import { MdFastfood } from "react-icons/md";
 import FoodItem from "./FoodItem";
-import {
-	searchTextChange,
-	searchTextSelector,
-	setCurrentFoodView,
-} from "../../app/rootSlice";
+import { searchTextSelector, setCurrentFoodView } from "../../app/rootSlice";
 import { Language } from "../../app/langSlice";
 import { removeAccents } from "../../utility/textTransfer";
+import { useEffect } from "react";
 
 const Home = () => {
 	let foods = useSelector(foodsSelector);
@@ -24,10 +21,10 @@ const Home = () => {
 	const lovingFood =
 		foods.find((food) => food.id === randomNumber) || foods[0];
 
-	function handleChangeCurrentFoodView(id: number) {
-		dispatch(setCurrentFoodView({ id }));
-		dispatch(searchTextChange({ text: "" }));
-	}
+	useEffect(() => {
+		dispatch(setCurrentFoodView({ id: null }));
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	// Tìm bắt đầu bằng search text (bỏ dấu và chuyển thành chữ thường)
 	if (searchText)
@@ -41,10 +38,7 @@ const Home = () => {
 		if (index > Math.ceil(foods.length / 2) - 1) return null;
 		return (
 			<div className="w-100 mt-3" key={food.id}>
-				<FoodItem
-					food={food}
-					onClick={() => handleChangeCurrentFoodView(food.id)}
-				/>
+				<FoodItem food={food} />
 			</div>
 		);
 	});
@@ -52,10 +46,7 @@ const Home = () => {
 		if (index <= Math.ceil(foods.length / 2) - 1) return null;
 		return (
 			<div className="w-100 mt-3" key={food.id}>
-				<FoodItem
-					food={food}
-					onClick={() => handleChangeCurrentFoodView(food.id)}
-				/>
+				<FoodItem food={food} />
 			</div>
 		);
 	});
@@ -66,14 +57,8 @@ const Home = () => {
 			<main className={styles.content}>
 				{!searchText && (
 					<>
-						<LovingFood
-							food={lovingFood}
-							onClick={handleChangeCurrentFoodView}
-						/>
-						<Trending
-							foods={foods}
-							onClick={handleChangeCurrentFoodView}
-						/>
+						<LovingFood food={lovingFood} />
+						<Trending foods={foods} />
 					</>
 				)}
 				{foods.length > 0 ? (
