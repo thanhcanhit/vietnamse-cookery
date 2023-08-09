@@ -1,39 +1,34 @@
 interface Base {
 	id: number;
-	name: {
-		vi: string;
-		en: string;
-	};
+	name: MultiLanguage;
+}
+
+interface MultiLanguage {
+	vi: string;
+	en: string;
+}
+
+interface MultiLanguageArray {
+	vi: string[];
+	en: string[];
 }
 
 interface Step {
-	name: {
-		vi: string;
-		en: string;
-	};
-	content: {
-		vi: string ;
-		en: string ;
-	};
+	name: MultiLanguage;
+	content: MultiLanguage;
 }
 
 interface Food extends Base {
-	introduction: { vi: string; en: string };
+	introduction: MultiLanguage;
 	imgPath: string[];
-	ingredient: {
-		vi: string[];
-		en: string[];
-	};
+	ingredient: MultiLanguageArray;
 	steps: Step[];
 	touristAttractions: number[];
 }
 
 interface TouristAttraction extends Base {
 	imgPath: string[];
-	introduction: {
-		vi: string;
-		en: string;
-	};
+	introduction: MultiLanguage;
 }
 
-export type { Food, TouristAttraction };
+export type { Food, TouristAttraction, MultiLanguage };

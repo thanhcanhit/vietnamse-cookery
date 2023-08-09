@@ -1,12 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "./store";
 
+const initialState: { search: string; currentFoodView: number | null } = {
+	search: "",
+	currentFoodView: null,
+};
+
 const rootSlice = createSlice({
 	name: "root",
-	initialState: {
-		search: "",
-		currentFoodView: null,
-	},
+	initialState: initialState,
 	reducers: {
 		searchTextChange: (state, action) => {
 			state.search = action.payload.text;

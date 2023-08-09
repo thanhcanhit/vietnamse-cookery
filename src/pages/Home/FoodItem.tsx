@@ -1,9 +1,8 @@
-import { Food } from "../../types/interface";
-import { Link } from "react-router-dom";
-import styles from "./home.module.css";
 import { useSelector } from "react-redux";
-import { languageSelector } from "../../app/selectors";
-import { Language } from "../../app/langSlice";
+import { Link } from "react-router-dom";
+import { Food } from "../../types/interface";
+import { Language, languageSelector } from "../../app/langSlice";
+import styles from "./home.module.css";
 
 type FoodItemType = {
 	food: Food;

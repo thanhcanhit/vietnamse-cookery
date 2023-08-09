@@ -1,24 +1,23 @@
 import { useDispatch, useSelector } from "react-redux";
-import { languageSelector } from "../../app/selectors";
 import { useNavigate } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { isFavoriteFoodSelector } from "../../app/selectors";
+import { toggleFavoriteItem } from "../../pages/Favorite/favoriteSlice";
+import { changeLanguage, languageSelector } from "../../app/langSlice";
+import { currentFoodViewSelector } from "../../app/rootSlice";
 import viIcon from "../../assets/img/vi.png";
 import enIcon from "../../assets/img/en.png";
 import styles from "./toolbar.module.css";
-import { changeLanguage } from "../../app/langSlice";
-import {
-	favoriteSelector,
-	toggleFavoriteItem,
-} from "../../pages/Favorite/favoriteSlice";
-import { currentFoodViewSelector } from "../../app/rootSlice";
+
 const ToolBar = () => {
-	const lang = useSelector(languageSelector);
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
+
+	const language = useSelector(languageSelector);
+	// Get current Food
 	const currentFood = useSelector(currentFoodViewSelector);
-	const favorites = useSelector(favoriteSelector);
-	const isFavoriteItem: boolean = favorites.includes(Number(currentFood));
+	const isFavoriteItem = useSelector(isFavoriteFoodSelector);
 
 	const handleBackClick = () => {
 		navigate("/");
@@ -38,7 +37,7 @@ const ToolBar = () => {
 			</div>
 			<div className={styles.toolbarRight}>
 				<div className={styles.langButton}>
-					{lang === "en" ? (
+					{language === "en" ? (
 						<img
 							src={enIcon}
 							alt="en"

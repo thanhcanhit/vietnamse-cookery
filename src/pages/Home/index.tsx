@@ -1,19 +1,29 @@
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import SearchBar from "./../../components/SearchBar/index";
-import styles from "./home.module.css";
-import { foodsSelector, languageSelector } from "../../app/selectors";
+import { MdFastfood } from "react-icons/md";
+import SearchBar from "./../../components/SearchBar";
 import LovingFood from "./LovingFood";
 import Trending from "./Trending";
-import { MdFastfood } from "react-icons/md";
 import FoodItem from "./FoodItem";
+import { MultiLanguage } from "../../types/interface";
 import {
 	searchTextChange,
 	searchTextSelector,
 	setCurrentFoodView,
 } from "../../app/rootSlice";
-import { Language } from "../../app/langSlice";
+import { Language, languageSelector } from "../../app/langSlice";
+import { foodsSelector } from "../../assets/data/dataSlice";
 import { removeAccents } from "../../utility/textTransfer";
-import { useEffect } from "react";
+import styles from "./home.module.css";
+
+const heading1: MultiLanguage = {
+	vi: "Và những món ngon khác",
+	en: "And other delicious dishes",
+};
+const searchNotFoundMessage: MultiLanguage = {
+	vi: "Không tìm thấy công thức liên quan đến từ khóa",
+	en: "Couldn't find a recipe related to the keyword",
+};
 
 const Home = () => {
 	let foods = useSelector(foodsSelector);
@@ -21,10 +31,12 @@ const Home = () => {
 	const dispatch = useDispatch();
 	const searchText = useSelector(searchTextSelector);
 
+	// Generate random number to be used for loving food
 	const randomNumber = Math.round(Math.random() * (foods.length - 1) + 1);
 	const lovingFood =
 		foods.find((food) => food.id === randomNumber) || foods[0];
 
+	// Set current food view to null when go to home
 	useEffect(() => {
 		dispatch(setCurrentFoodView({ id: null }));
 
@@ -34,7 +46,7 @@ const Home = () => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
-	// Tìm bắt đầu bằng search text (bỏ dấu và chuyển thành chữ thường)
+	// Search startWith
 	if (searchText)
 		foods = foods.filter((food) =>
 			removeAccents(food.name[language].toLowerCase()).startsWith(
@@ -42,6 +54,7 @@ const Home = () => {
 			)
 		);
 
+	// Render col 1
 	const foodListRendered1 = foods.map((food, index) => {
 		if (index > Math.ceil(foods.length / 2) - 1) return null;
 		return (
@@ -50,6 +63,8 @@ const Home = () => {
 			</div>
 		);
 	});
+
+	// Render col 2
 	const foodListRendered2 = foods.map((food, index) => {
 		if (index <= Math.ceil(foods.length / 2) - 1) return null;
 		return (
@@ -74,10 +89,8 @@ const Home = () => {
 						<div className={styles.container}>
 							<div className="d-flex align-items-center justify-content-center  gap-2 ">
 								<h2 className="heading">
-									{language === "en"
-										? "And other delicious dishes"
-										: "Và những món ngon khác"}
-								</h2>{" "}
+									{heading1[language]}
+								</h2>
 								<MdFastfood className="color-primary mb-1" />
 							</div>
 							<div className="row justify-content-center">
@@ -92,9 +105,7 @@ const Home = () => {
 					</div>
 				) : (
 					<p className="heading text-center p-2 fs-5">
-						{language === "en"
-							? `Couldn't find a recipe related to the keyword "${searchText}"`
-							: `Không tìm thấy công thức liên quan đến từ khóa "${searchText}"`}
+						{searchNotFoundMessage[language] + `"${searchText}"`}
 					</p>
 				)}
 			</main>

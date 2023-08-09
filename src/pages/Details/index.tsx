@@ -1,21 +1,20 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { foodsSelector, languageSelector } from "../../app/selectors";
-import PhotoListView from "../../components/PhotoListView";
-import ToolBar from "../../components/Toolbar";
 import { useEffect } from "react";
-import { setCurrentFoodView } from "../../app/rootSlice";
+import ToolBar from "../../components/Toolbar";
+import PhotoListView from "../../components/PhotoListView";
 import HighlightText from "./HighlightText";
+import { setCurrentFoodView } from "../../app/rootSlice";
+import { languageSelector } from "../../app/langSlice";
+import { currentFoodSelector } from "../../app/selectors";
 
 const Detail = () => {
 	const { id } = useParams();
-	const foods = useSelector(foodsSelector);
-	const food = foods.find((food) => food.id === Number(id));
+	const food = useSelector(currentFoodSelector);
 	const lang = useSelector(languageSelector);
 	const dispatch = useDispatch();
 
-	if (!food) return <div>Some thing are wrong!</div>;
-
+	// Set current food view id to this id
 	// eslint-disable-next-line react-hooks/rules-of-hooks
 	useEffect(() => {
 		dispatch(setCurrentFoodView({ id: Number(id) }));
@@ -23,6 +22,10 @@ const Detail = () => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
+	// If not found show notify
+	if (!food) return <h1 className="text-center">Some thing are wrong!</h1>;
+
+	// Render ingredient of the recipe
 	const ingredientRendered = (
 		<div className="accordion-item show">
 			<h2 className="accordion-header  bg-white">
@@ -49,6 +52,7 @@ const Detail = () => {
 		</div>
 	);
 
+	// Render step by step of the recipe
 	const stepsRendered = food.steps.map((step, index) => (
 		<div className="accordion-item show" key={index}>
 			<h2 className="accordion-header">

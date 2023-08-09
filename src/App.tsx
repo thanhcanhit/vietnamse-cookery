@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import ControlBar from "./components/ControlBar";
 import Home from "./pages/Home";
 import "./App.css";
@@ -23,6 +23,7 @@ function App() {
 						element={
 							<h1 className="w-100 pt-5 d-flex justify-content-center  align-items-center ">
 								Page not found
+								<Link to="/">Return to home page</Link>
 							</h1>
 						}
 					/>

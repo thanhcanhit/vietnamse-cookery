@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { FaTimes } from "react-icons/fa";
-import styles from "./searchBar.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { languageSelector } from "../../app/selectors";
 import { searchTextChange } from "../../app/rootSlice";
+import { languageSelector } from "../../app/langSlice";
+import styles from "./searchBar.module.css";
 
 const SearchBar = () => {
 	const dispatch = useDispatch();

@@ -1,20 +1,20 @@
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { IconType } from "react-icons/lib/esm/iconBase";
 import { PiCookingPotBold } from "react-icons/pi";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { FiBookOpen } from "react-icons/fi";
-import styles from "./controlBar.module.css";
-import { useSelector } from "react-redux";
-import { languageSelector } from "../../app/selectors";
+import { FaPlay } from "react-icons/fa";
 import { currentFoodViewSelector } from "../../app/rootSlice";
+import { languageSelector } from "../../app/langSlice";
+import { MultiLanguage } from "../../types/interface";
+import styles from "./controlBar.module.css";
 
 type ControlItem = {
 	path: string;
-	display: {
-		vi: string;
-		en: string;
-	};
+	display: MultiLanguage;
+	primary?: boolean;
 	icon: IconType;
 };
 
@@ -47,10 +47,19 @@ const controlList2: ControlItem[] = [
 		icon: FiBookOpen,
 	},
 	{
+		path: "/food/",
+		display: {
+			vi: "Bắt Đầu",
+			en: "Start Cook",
+		},
+		primary: true,
+		icon: FaPlay,
+	},
+	{
 		path: "/location",
 		display: {
-			vi: "Du lịch cùng món ăn",
-			en: "Travel with food",
+			vi: "Du lịch",
+			en: "Travel",
 		},
 		icon: IoLocationOutline,
 	},
@@ -73,8 +82,10 @@ const ControlBar = () => {
 							: item.path
 					}
 					className={({ isActive }) => {
-						const draft = styles.controlItem;
-
+						let draft = styles.controlItem;
+						if (item.primary)
+							return (draft +=
+								" background-primary text-white rounded ");
 						return isActive ? draft + " " + styles.active : draft;
 					}}
 				>

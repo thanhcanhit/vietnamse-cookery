@@ -10,7 +10,7 @@ const HighlightText = ({ paragraph }: { paragraph: string }) => {
 		);
 
 	// Search by keyword
-	const keywords = ["Bước", "Step", "Finnaly"];
+	const keywords = ["Bước", "Step", "Finally"];
 	const isBold = keywords.some((keyword) =>
 		paragraph.toLowerCase().includes(keyword.toLowerCase())
 	);

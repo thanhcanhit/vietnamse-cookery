@@ -1,7 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { RootState } from "./store";
 
 export type Language = "en" | "vi";
 
+// Get local language
 const localLanguage = (() => {
 	const localDataText = localStorage.getItem("STORE");
 	if (!localDataText) return null;
@@ -20,6 +22,11 @@ const langSlice = createSlice({
 		},
 	},
 });
+
+// Selector
+const languageSelector = (state: RootState) => state.language;
+
+export { languageSelector };
 
 export const { changeLanguage } = langSlice.actions;
 
