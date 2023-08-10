@@ -52,10 +52,14 @@ const ToolBar = () => {
 					)}
 				</div>
 				<div
-					className="d-flex align-items-center "
+					className="d-flex align-items-center"
 					onClick={handleFavoriteClick}
 				>
-					{isFavoriteItem ? <AiFillHeart /> : <AiOutlineHeart />}
+					{isFavoriteItem ? (
+						<AiFillHeart className=" animate__animated animate__heartBeat" />
+					) : (
+						<AiOutlineHeart />
+					)}
 				</div>
 			</div>
 		</div>

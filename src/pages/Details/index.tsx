@@ -11,13 +11,14 @@ import { currentFoodSelector } from "../../app/selectors";
 const Detail = () => {
 	const { id } = useParams();
 	const food = useSelector(currentFoodSelector);
-	const lang = useSelector(languageSelector);
+	const language = useSelector(languageSelector);
 	const dispatch = useDispatch();
 
 	// Set current food view id to this id
 	// eslint-disable-next-line react-hooks/rules-of-hooks
 	useEffect(() => {
 		dispatch(setCurrentFoodView({ id: Number(id) }));
+		window.scrollTo(0, 0);
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
@@ -30,21 +31,21 @@ const Detail = () => {
 		<div className="accordion-item show">
 			<h2 className="accordion-header  bg-white">
 				<button
-					className="accordion-button bg-white heading fs-4"
+					className="accordion-button bg-danger-subtle color-primary heading fs-4 "
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#ingredient"
 				>
-					{lang == "en" ? "Ingredient" : "Nguyên liệu"}
+					{language == "en" ? "Ingredient" : "Nguyên liệu"}
 				</button>
 			</h2>
 			<div
 				id="ingredient"
 				className="accordion-collapse collapse show bg-white"
-				data-bs-parent="#accordionMain"
+				data-bs-parent={`#parentIngredient`}
 			>
-				<div className="accordion-body fs-6  bg-white">
-					{food.ingredient[lang].map((item, index) => (
+				<div className="accordion-body fs-6  ">
+					{food.ingredient[language].map((item, index) => (
 						<li key={index}>{item}</li>
 					))}
 				</div>
@@ -57,23 +58,25 @@ const Detail = () => {
 		<div className="accordion-item show" key={index}>
 			<h2 className="accordion-header">
 				<button
-					className="accordion-button bg-white heading fs-4"
+					className="accordion-button heading fs-4 bg-danger-subtle color-primary "
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target={`#${index}`}
 				>
-					{step.name[lang]}
+					{step.name[language]}
 				</button>
 			</h2>
 			<div
 				id={index.toString()}
 				className="accordion-collapse collapse show bg-white"
-				data-bs-parent="#accordionMain"
+				data-bs-parent={`#parent${index}`}
 			>
 				<div className="accordion-body fs-6">
-					{step.content[lang].split("\n").map((paragraph, index) => (
-						<HighlightText key={index} paragraph={paragraph} />
-					))}
+					{step.content[language]
+						.split("\n")
+						.map((paragraph, index) => (
+							<HighlightText key={index} paragraph={paragraph} />
+						))}
 				</div>
 			</div>
 		</div>
@@ -90,8 +93,13 @@ const Detail = () => {
 		<div style={{ marginTop: 60 }}>
 			<ToolBar />
 			<div className="container">
-				<h1 className="heading text-center py-2">{food.name[lang]}</h1>
-				<p className="fs-5">{food.introduction[lang]}</p>
+				<h1
+					key={language}
+					className="heading text-center py-2 color-primary animate__animated animate__bounceIn"
+				>
+					{food.name[language]}
+				</h1>
+				<p className="fs-5">{food.introduction[language]}</p>
 			</div>
 			<PhotoListView imgPaths={food.imgPath} />
 			<div className="container fs-5 py-4">{accoridonRendered}</div>

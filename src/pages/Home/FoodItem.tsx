@@ -11,9 +11,9 @@ type FoodItemType = {
 const FoodItem = ({ food }: FoodItemType) => {
 	const language: Language = useSelector(languageSelector);
 	return (
-		<div key={food.id} className={styles.trendingItemWrapper}>
+		<div key={food.id} className={styles.foodItemWrapper}>
 			<Link to={`/food/${food.id}`} className="text-decoration-none">
-				<div className={styles.trendingItemContent}>
+				<div className={styles.foodItemContent}>
 					<img
 						style={{ objectFit: "cover", height: 120 }}
 						src={food.imgPath[0]}

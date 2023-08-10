@@ -33,6 +33,10 @@ html {
   display: none;
 }
 
+.bg-white {
+  background-color: #fff!important;
+}
+
 @media (min-width: 500px) {
   .app {
     display: none;

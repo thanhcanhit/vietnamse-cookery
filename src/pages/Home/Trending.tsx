@@ -24,7 +24,7 @@ const Trending = ({ foods }: TrendingType) => {
 	return (
 		<div>
 			<div className="container mb-2">
-				<h2 className="heading">
+				<h2 className="heading text-center">
 					{heading[language]}
 					<WiStars className="color-primary fs-2 " />
 				</h2>

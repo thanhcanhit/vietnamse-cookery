@@ -7,10 +7,11 @@ import {
 } from "../../app/selectors";
 import { languageSelector } from "../../app/langSlice";
 import { MultiLanguage } from "../../types/interface";
+import { useEffect } from "react";
 
 const heading: MultiLanguage = {
 	en: "Places related to the dish ",
-	vi: "Các địa điểm liên quan đến món ăn ",
+	vi: "Các địa điểm liên quan đến ",
 };
 
 const TouristAttractions = () => {
@@ -22,6 +23,10 @@ const TouristAttractions = () => {
 
 	// Get locations
 	const locations = useSelector(currentFoodTouristList);
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	// Render location list
 	const locationsRendered = locations.map((location) => (
@@ -61,10 +66,10 @@ const TouristAttractions = () => {
 					<h1 className="text-center">Some thing is wrong</h1>
 				) : (
 					<div>
-						<h2 className="text-center py-2">
+						<h2 className="text-center py-2 ">
 							{heading[language]}
 							<br />
-							<span className="heading">
+							<span className="heading color-primary d-inline-block  animate__animated animate__bounceIn">
 								"{food.name[language]}"
 							</span>
 						</h2>

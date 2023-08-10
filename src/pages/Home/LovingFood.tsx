@@ -18,10 +18,12 @@ const LovingFood = ({ food }: LovingType) => {
 	const language: Language = useSelector(languageSelector);
 
 	return (
-		<div className={styles.container}>
-			<h2 className={styles.heading}>{heading[language]}</h2>
+		<div
+			className={styles.container + " animate__animated animate__zoomIn"}
+		>
+			<h2 className={styles.heading + " text-center"}>{heading[language]}</h2>
 			<div className={styles.lovingFood}>
-				<PhotoListView imgPaths={food.imgPath} height={300} />
+				<PhotoListView imgPaths={food.imgPath} height={400} />
 				<Link
 					to={`/food/${food.id}`}
 					style={{ textDecoration: "none" }}

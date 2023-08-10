@@ -38,6 +38,7 @@ const Home = () => {
 
 	// Set current food view to null when go to home
 	useEffect(() => {
+		window.scrollTo(0, 0);
 		dispatch(setCurrentFoodView({ id: null }));
 
 		return () => {

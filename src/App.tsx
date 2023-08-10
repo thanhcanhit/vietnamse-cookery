@@ -5,11 +5,17 @@ import "./App.css";
 import Detail from "./pages/Details";
 import TouristAttractions from "./pages/TouristAttraction";
 import Favorite from "./pages/Favorite";
+import Welcome from "./pages/Welcome";
+import { useSelector } from "react-redux";
+import { isFirstTimeSelector } from "./app/rootSlice";
 
 function App() {
+	const isFirstTime = useSelector(isFirstTimeSelector);
+
 	return (
 		<div className="app">
 			<BrowserRouter basename="vietnamse-cookery">
+				{isFirstTime && <Welcome />}
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/favorite" element={<Favorite />} />

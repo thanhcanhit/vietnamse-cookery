@@ -1,0 +1,41 @@
+
+
+.welcome {
+  padding: 1rem;
+  background-color: white;
+  position: fixed;
+  inset: 0;
+  z-index: 101;
+}
+
+.content {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  --w: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.button span {
+  flex: 1;
+  padding-inline-end: var(--w);
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.button img {
+  display: block;
+  width: var(--w);
+  height: var(--w);
+  border-radius: 50%;
+}
