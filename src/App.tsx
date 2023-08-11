@@ -8,9 +8,24 @@ import Favorite from "./pages/Favorite";
 import Welcome from "./pages/Welcome";
 import { useSelector } from "react-redux";
 import { isFirstTimeSelector } from "./app/rootSlice";
+import { useEffect, useState } from "react";
+import LoadingCover from "./components/LoadingCover";
 
 function App() {
 	const isFirstTime = useSelector(isFirstTimeSelector);
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+
+	useEffect(() => {
+		const toKey = setTimeout(() => {
+			setIsLoading(false);
+		}, 3000);
+
+		return () => {
+			clearTimeout(toKey);
+		}
+	}, [])
+
+	if (isLoading) return <LoadingCover />;
 
 	return (
 		<div className="app">
