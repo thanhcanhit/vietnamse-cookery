@@ -25,7 +25,7 @@ function App() {
 		}
 	}, [])
 
-	if (isLoading) return <LoadingCover />;
+	if (isLoading) return <div className="app"> <LoadingCover /></div>;
 
 	return (
 		<div className="app">
