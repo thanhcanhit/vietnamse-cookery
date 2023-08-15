@@ -24,6 +24,7 @@ interface Food extends Base {
 	ingredient: MultiLanguageArray;
 	steps: Step[];
 	touristAttractions: number[];
+	script?: CookingScript;
 }
 
 interface TouristAttraction extends Base {
@@ -31,4 +32,15 @@ interface TouristAttraction extends Base {
 	introduction: MultiLanguage;
 }
 
-export type { Food, TouristAttraction, MultiLanguage };
+interface CookingStep {
+	title: string;
+	times: number;
+	imgPath: string[];
+	withNextStep?: boolean;
+}
+
+interface CookingScript {
+	steps: CookingStep[];
+}
+
+export type { Food, TouristAttraction, MultiLanguage, CookingStep };

@@ -347,6 +347,54 @@ const foods: Food[] = [
 			},
 		],
 		touristAttractions: [6, 7, 8, 9, 10],
+		script: {
+			steps: [
+				{
+					title: "Step 1: Wash the pork with salt",
+					imgPath: ["/vietnamse-cookery/img/foods/5/steps/s1.png"],
+					times: 30,
+				},
+				{
+					title: "Next, disinfect with salt or onion: 30-40 minutes",
+					imgPath: ["/vietnamse-cookery/img/foods/5/steps/s2.png"],
+					times: 2400,
+				},
+				{
+					title: "In the meantime, we will boil the shrimp for about 3 minutes and peel it",
+					imgPath: [
+						"/vietnamse-cookery/img/foods/5/steps/s31.png",
+						"/vietnamse-cookery/img/foods/5/steps/s32.png",
+					],
+					times: 180,
+				},
+				{
+					title: "Next, boil the dried vermicelli for 5 minutes by dropping the vermicelli in when the water is boiling",
+					imgPath: ["/vietnamse-cookery/img/foods/5/steps/s4.png"],
+					times: 300,
+				},
+				{
+					title: "Next, wash the vegetables and mince (crush) the garlic and chili",
+					imgPath: [
+						"/vietnamse-cookery/img/foods/5/steps/s5.png",
+						"/vietnamse-cookery/img/foods/5/steps/s6.png",
+					],
+					times: 120,
+				},
+				{
+					title: "After that, start rolling the spring roll",
+					imgPath: ["/vietnamse-cookery/img/foods/5/steps/s7.png"],
+					times: 600,
+				},
+				{
+					title: "Finally, make the dipping sauce Put 2 tablespoons of sugar in the bowl, add 2 tablespoons of filtered water, stir until the sugar dissolves, then add 3 tablespoons of lemon juice, 5 tablespoons of fish sauce, continue stirring.",
+					imgPath: [
+						"/vietnamse-cookery/img/foods/5/steps/s91.png",
+						"/vietnamse-cookery/img/foods/5/steps/s92.png",
+					],
+					times: 120,
+				},
+			],
+		},
 	},
 	{
 		id: 4,

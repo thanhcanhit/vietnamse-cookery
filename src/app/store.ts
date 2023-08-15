@@ -3,6 +3,8 @@ import dataSlice from "../assets/data/dataSlice";
 import langSlice from "./langSlice";
 import rootSlice from "./rootSlice";
 import favoriteSlice from './../pages/Favorite/favoriteSlice';
+import cookingSlice from "../components/Cooking/cookingSlice";
+
 
 
 const store = configureStore({
@@ -10,6 +12,7 @@ const store = configureStore({
 		data: dataSlice,
 		language: langSlice,
 		favorite: favoriteSlice,
+		cooking: cookingSlice,
 		root: rootSlice,
 	},
 });

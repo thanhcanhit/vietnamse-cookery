@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { IconType } from "react-icons/lib/esm/iconBase";
 import { PiCookingPotBold } from "react-icons/pi";
@@ -10,6 +10,11 @@ import { currentFoodViewSelector } from "../../app/rootSlice";
 import { languageSelector } from "../../app/langSlice";
 import { MultiLanguage } from "../../types/interface";
 import styles from "./controlBar.module.css";
+import {
+	currentCookingFoodId,
+	currentFoodIdChange,
+} from "../Cooking/cookingSlice";
+import { currentFoodSelector } from "../../app/selectors";
 
 type ControlItem = {
 	path: string;
@@ -68,14 +73,31 @@ const controlList2: ControlItem[] = [
 const ControlBar = () => {
 	const language = useSelector(languageSelector);
 	const currentFoodViewId = useSelector(currentFoodViewSelector);
+	const currentFood = useSelector(currentFoodSelector);
+	const dispatch = useDispatch();
 
 	const itemList = currentFoodViewId ? controlList2 : controlList;
+
+	const handleStartCookingClick = () => {
+		console.log(currentFood);
+		dispatch(
+			currentFoodIdChange({
+				id: currentFood?.id,
+				steps: currentFood?.script?.steps,
+			})
+		);
+	};
 
 	return (
 		<nav className={styles.controlBar}>
 			{itemList.map((item: ControlItem) => (
 				<NavLink
 					key={item.path}
+					onClick={
+						item.primary
+							? handleStartCookingClick
+							: () => console.log(item.primary)
+					}
 					to={
 						currentFoodViewId
 							? `${item.path}/${currentFoodViewId}`
