@@ -18,6 +18,19 @@ interface Step {
 	content: MultiLanguage;
 }
 
+interface Restaurant {
+	name: string;
+	website: string;
+	phoneNumber: string;
+	direction: string;
+	address: string;
+}
+
+interface RestaurantPlace {
+	name: string;
+	restaurants: Restaurant[];
+}
+
 interface Food extends Base {
 	introduction: MultiLanguage;
 	imgPath: string[];
@@ -25,11 +38,13 @@ interface Food extends Base {
 	steps: Step[];
 	touristAttractions: number[];
 	script?: CookingScript;
+	restaurantPlace?: RestaurantPlace[];
 }
 
 interface TouristAttraction extends Base {
 	imgPath: string[];
 	introduction: MultiLanguage;
+	mapLink?: string;
 }
 
 interface CookingStep {
@@ -37,6 +52,7 @@ interface CookingStep {
 	times: number;
 	imgPath: string[];
 	withNextStep?: boolean;
+	waitTime?: number;
 }
 
 interface CookingScript {

@@ -144,6 +144,7 @@ const touristAttractions: TouristAttraction[] = [
 			en: `Notre Dame Cathedral is one of the places that you can't miss checking out when coming to Saigon because of its ancient beauty and symbolic meaning. Located in the center of District 1, the church area clearly shows the imprint of Saigon when surrounding the ancient, mossy, and historic church area are skyscrapers, modern and bustling. more upset than anything. This place features European architecture combining beautiful Roman and Gothic styles and the largest pair of bells in Vietnam. Notre Dame Cathedral is the most beautiful and important church of the diocese of Saigon and the pride of the city's people.
 			The convenience also lies in the fact that, from this location, you can quickly move to other sightseeing locations in Saigon, such as the Independence Palace, shopping at Diamond Plaza, or walking through Dong Khoi Street and watching the lake. Turtle or simply try the feeling of drinking flat coffee on Han Thuyen Street.`,
 		},
+		mapLink: "https://goo.gl/maps/LUDLAq2kfFGLEk8h8",
 	},
 	{
 		id: 7,
@@ -165,6 +166,7 @@ const touristAttractions: TouristAttraction[] = [
 			In particular, by walking into the courtyard outside, visitors can also watch the Saigon River with a clear view; at night, the lights are still shimmering on the river.
 			`,
 		},
+		mapLink: "https://goo.gl/maps/EyhcfEoDetztDkux8",
 	},
 	{
 		id: 8,
@@ -185,6 +187,7 @@ const touristAttractions: TouristAttraction[] = [
 			Going straight on Nguyen Hue Street in the Southeast direction will bring you to the brilliant Ton Duc Thang Street on the banks of the Saigon River. More specifically, every New Year and spring, Nguyen Hue Street is covered in sparkling fresh flowers and vibrant vitality.
 			`,
 		},
+		mapLink: "https://goo.gl/maps/MXMbG9uzmFtNQebC7",
 	},
 	{
 		id: 9,
@@ -207,6 +210,7 @@ const touristAttractions: TouristAttraction[] = [
 			Considered a historical witness witnessing the fluctuations of history through the ages, Ben Thanh Market is one of the most prominent symbols when it comes to Saigon for tourists near and far. Ben Thanh Market has four gates: east, west, south, and North, facing the main roads in the center of Saigon. Visiting Ben Thanh Market, visitors will be spoiled for choice to buy clothes, shoes, souvenirs, and a lot of other gadgets and items.
 			`,
 		},
+		mapLink: "https://goo.gl/maps/R63gkcZdBt1kJUqj6",
 	},
 	{
 		id: 10,
@@ -224,6 +228,7 @@ const touristAttractions: TouristAttraction[] = [
 			`,
 			en: `Formerly the Blanchard de la Brosse Museum, the Vietnamese History Museum will give you the opportunity to admire thousands of valuable artifacts and learn more about Vietnamese history. This is really a place where foreign tourists love to learn about the past and history of Vietnam more deeply. Not only is it a place to display meaningful artifacts, but it is also a place to store more than 25,000 books, magazines, and documents for archaeological, ethnographic, and historical research.`,
 		},
+		mapLink: "https://goo.gl/maps/X7z6MUkQdWH4J2Km9",
 	},
 	{
 		id: 11,

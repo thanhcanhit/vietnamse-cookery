@@ -51,6 +51,10 @@ const TouristAttractions = () => {
 							.map((line, index) => (
 								<p key={index}>{line}</p>
 							))}
+
+						{location.mapLink && (
+							<a href={location.mapLink} className="text-primary text-center">Google map</a>
+						)}
 					</div>
 				</div>
 			</div>

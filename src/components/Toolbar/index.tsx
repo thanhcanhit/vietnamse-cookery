@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { BiArrowBack } from "react-icons/bi";
+import { Link, useNavigate } from "react-router-dom";
+import { BiArrowBack, BiRestaurant } from "react-icons/bi";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { isFavoriteFoodSelector } from "../../app/selectors";
 import { toggleFavoriteItem } from "../../pages/Favorite/favoriteSlice";
@@ -36,6 +36,29 @@ const ToolBar = () => {
 				<BiArrowBack />
 			</div>
 			<div className={styles.toolbarRight}>
+				<Link
+					to={`/restaurants/3`}
+					style={{
+						textDecoration: "none",
+					}}
+				>
+					<div
+						style={{
+							fontSize: 20,
+							display: "flex",
+							flexDirection: "column",
+							alignItems: "center",
+							padding: "2px 8px",
+							border: "1px solid var(--primary-color)",
+							borderRadius: 4,
+							backgroundColor: "var(--primary-color)",
+							color: "white",
+						}}
+					>
+						<BiRestaurant />
+						<span style={{ fontSize: 12 }}>Restaurants</span>
+					</div>
+				</Link>
 				<div className={styles.langButton}>
 					{language === "en" ? (
 						<img

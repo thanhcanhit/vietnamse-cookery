@@ -52,7 +52,7 @@ const controlList2: ControlItem[] = [
 		icon: FiBookOpen,
 	},
 	{
-		path: "/food/",
+		path: "/cooking/",
 		display: {
 			vi: "Bắt Đầu",
 			en: "Start Cook",

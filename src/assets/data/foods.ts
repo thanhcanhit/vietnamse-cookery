@@ -358,6 +358,7 @@ const foods: Food[] = [
 					title: "Next, disinfect with salt or onion: 30-40 minutes",
 					imgPath: ["/vietnamse-cookery/img/foods/5/steps/s2.png"],
 					times: 2400,
+					withNextStep: true,
 				},
 				{
 					title: "In the meantime, we will boil the shrimp for about 3 minutes and peel it",
@@ -365,7 +366,7 @@ const foods: Food[] = [
 						"/vietnamse-cookery/img/foods/5/steps/s31.png",
 						"/vietnamse-cookery/img/foods/5/steps/s32.png",
 					],
-					times: 180,
+					times: 240,
 				},
 				{
 					title: "Next, boil the dried vermicelli for 5 minutes by dropping the vermicelli in when the water is boiling",
@@ -395,6 +396,69 @@ const foods: Food[] = [
 				},
 			],
 		},
+		restaurantPlace: [
+			{
+				name: "California",
+				restaurants: [
+					{
+						name: "LSXO",
+						website:
+							"https://www.yelp.com/biz_redir?url=http%3A%2F%2Fdinebluegold.com%2Flsxo&cachebuster=1691940545&website_link_type=website&src_bizid=VbGD1SBNj3gfVISCBzmZnQ&s=36dce49aa4fc104b50a867f14a64b589d6092265151c2327b57f357ed4368f5a",
+						phoneNumber: `(714) 374-0083`,
+						address:
+							"21016 Pacific Coast Hwy Ste D200 Huntington Beach, CA 92648",
+						direction:
+							"https://www.yelp.com/map/lsxo-huntington-beach-2",
+					},
+					{
+						name: "FRESHROLL",
+						website: "eatatfreshroll.com",
+						phoneNumber: `(415) 348-1858`,
+						address: "157 4th St San Francisco, CA 94103",
+						direction:
+							"https://www.yelp.com/map/freshroll-vietnamese-rolls-and-bowls-san-francisco-7",
+					},
+				],
+			},
+			{
+				name: "New York",
+				restaurants: [
+					{
+						name: "Saigon Shack",
+						website: "https://www.saigonshack.com/",
+						phoneNumber: `212-228-0588`,
+						address: "114 MacDougal St New York, NY 10012",
+						direction: "",
+					},
+				],
+			},
+			{
+				name: "Washington",
+				restaurants: [
+					{
+						name: "Roll Play Grill",
+						website: "rollplaygrill.com",
+						phoneNumber: `(703) 891-5665`,
+						address: "8150 Leesburg Pike Ste 100 Vienna, VA 22182",
+						direction:
+							"https://www.yelp.com/map/roll-play-grill-vienna-4",
+					},
+				],
+			},
+			{
+				name: "Texas City",
+				restaurants: [
+					{
+						name: "Suki poke by the sea",
+						website: "sukipokegalveston.com",
+						phoneNumber: `(409) 502-2931`,
+						address: "427 Market St Unit H Galveston, TX 77550",
+						direction:
+							"https://www.yelp.com/map/suki-poke-by-the-sea-galveston",
+					},
+				],
+			},
+		],
 	},
 	{
 		id: 4,

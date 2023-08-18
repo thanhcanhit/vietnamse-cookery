@@ -5,6 +5,7 @@ import {
 	foodsSelector,
 	touristAttractionSelector,
 } from "../assets/data/dataSlice";
+import { currentCookingFoodId } from "../components/Cooking/cookingSlice";
 
 // Favorite food selector
 const isFavoriteFoodSelector = createSelector(
@@ -20,6 +21,15 @@ const currentFoodSelector = createSelector(
 	foodsSelector,
 	currentFoodViewSelector,
 	(foods, currentId) => {
+		return foods.find((food) => food.id === currentId);
+	}
+);
+
+const currentCookingFoodSelector = createSelector(
+	foodsSelector,
+	currentCookingFoodId,
+	(foods, currentId) => {
+		if (!currentId) return null;
 		return foods.find((food) => food.id === currentId);
 	}
 );
@@ -48,4 +58,5 @@ export {
 	currentFoodSelector,
 	currentFoodTouristList,
 	currentFavoriteFood,
+	currentCookingFoodSelector,
 };
